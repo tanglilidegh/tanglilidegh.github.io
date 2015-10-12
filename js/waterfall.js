@@ -2,13 +2,15 @@
  * Created by tll on 2015/10/8.
  */
 window.onload=function(){
+
+
     waterfall('main','box');
     window.onscroll=function(){
         if(checkScrollSlide()){
             var oParent=document.getElementById('main');
-            //½«Êı¾İ¿éäÖÈ¾µ½µ±Ò³ÃæµÄÎ²²¿
+            //å°†æ•°æ®å—æ¸²æŸ“åˆ°å½“é¡µé¢çš„å°¾éƒ¨
             //for(var i=0;i<dataInt.data.length;i++){
-                for(var i=24;i<77;i++){
+                for(var i=1;i<77;i++){
                 var oBox=document.createElement('div');
                 oBox.className='box';
                 oParent.appendChild(oBox);
@@ -27,15 +29,15 @@ window.onload=function(){
 }
 
 function waterfall(parent,box){
-    //½«mainÏÂµÄËùÓĞµÄclassÎªboxµÄÔªËØÈ¡³öÀ´
+    //å°†mainä¸‹çš„æ‰€æœ‰çš„classä¸ºboxçš„å…ƒç´ å–å‡ºæ¥
     var oParent=document.getElementById(parent);
     var oBoxs=getByClass(oParent,box);
-    //¼ÆËãÕû¸öÒ³ÃæÏÔÊ¾µÄÁĞÊı£¨Ò³Ãæ¿í/boxµÄ¿í)
+    //è®¡ç®—æ•´ä¸ªé¡µé¢æ˜¾ç¤ºçš„åˆ—æ•°ï¼ˆé¡µé¢å®½/boxçš„å®½)
     var oBoxw=oBoxs[0].offsetWidth;
     var cols=Math.floor(document.documentElement.clientWidth/oBoxw);
-    //ÉèÖÃmainµÄ¿í
+    //è®¾ç½®mainçš„å®½
     oParent.style.cssText='width:'+oBoxw*cols+'px;margin:0 auto';
-    //´æ·ÅÃ¿Ò»ÁĞ¸ß¶ÈµÄÊı×é
+    //å­˜æ”¾æ¯ä¸€åˆ—é«˜åº¦çš„æ•°ç»„
     var hArr=[];
     for(var i=0;i<oBoxs.length;i++){
         if(i<cols){
@@ -55,9 +57,9 @@ function waterfall(parent,box){
 
 }
 
-//¸ù¾İclass»ñÈ¡ÔªËØ
+//æ ¹æ®classè·å–å…ƒç´ 
 function getByClass(parent,clsName){
-    var boxArr=new Array(),    //ÓÃÀ´´æ´¢»ñÈ¡µ½µÄËùÓĞclassÎªboxµÄÔªËØ
+    var boxArr=new Array(),    //ç”¨æ¥å­˜å‚¨è·å–åˆ°çš„æ‰€æœ‰classä¸ºboxçš„å…ƒç´ 
         oElements=parent.getElementsByTagName("*");
     for(var i=0;i<oElements.length;i++){
         if(oElements[i].className==clsName){
@@ -75,15 +77,15 @@ function getMinhIndex(arr,val){
     }
 }
 
-//¼ì²âÊÇ·ñ¾ß±¸ÁË¹ö¶¯Ìõ¼ÓÔØÊı¾İ¿éµÄÌõ¼ş
+//æ£€æµ‹æ˜¯å¦å…·å¤‡äº†æ»šåŠ¨æ¡åŠ è½½æ•°æ®å—çš„æ¡ä»¶
 function checkScrollSlide(){
     var oParent=document.getElementById('main');
     var oBoxs=getByClass(oParent,'box');
-    //×îºóÒ»¸öbox¾àÀë×îÉÏÃæµÄ¸ß¶È+×îºóÒ»¸öbox×ÔÉíµÄ¸ß¶È
-    var lastBoxH=oBoxs[oBoxs.length-1].offsetTop+Math.floor(oBoxs[oBoxs.length-1].offsetHeight/2);
-    //µ±Ç°Ò³Ãæ¹ö×ßµÄ¾àÀë
-    var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
-    var height=document.body.clientHeight||document.documentElement.clientHeight;
+    //æœ€åä¸€ä¸ªboxè·ç¦»æœ€ä¸Šé¢çš„é«˜åº¦+æœ€åä¸€ä¸ªboxè‡ªèº«çš„é«˜åº¦
+    //var lastBoxH=oBoxs[oBoxs.length-1].offsetTop+Math.floor(oBoxs[oBoxs.length-1].offsetHeight/2);
+    //å½“å‰é¡µé¢æ»šèµ°çš„è·ç¦»
+    //var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+    //var height=document.body.clientHeight||document.documentElement.clientHeight;
     return (lastBoxH<scrollTop+height)?true:false;
 }
 

@@ -419,8 +419,20 @@ footer {
 }
 
 #main{
-    position: relative;
+    position: relative; margin: 0 auto; width: 1200px;
 }
+
+#main > div{
+    width: 25%;
+    float: left;
+}
+
+#main .box{}
+#main > div > a > img{
+    width: 100%;
+}
+#main > div > a{
+    display: block; width: 100%; box-sizing: border-box;padding: 20px; }
 .box{padding: 15px 0 0 15px; float: left;
 }
 .pic{
