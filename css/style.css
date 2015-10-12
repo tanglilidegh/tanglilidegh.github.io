@@ -1,0 +1,419 @@
+/* css reset */
+ol, ul {
+    list-style: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* common */
+a {
+    text-decoration: none;
+}
+
+body {
+    font: normal 14px/1.6 "Microsoft YaHei", Arial, sans-serif, "Josefin Slab", "Myriad Pro";
+    color: #979797;
+    background-color: #d2eae9;
+}
+
+.w1000 {
+    width: 1000px;
+    margin: 0 auto;
+    /*background: #000;*/
+}
+
+.color255 {
+    color: #fff;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.li_width {
+    width: 460px;
+    height: 1px;
+}
+
+.li_width_s {
+    width: 192px;
+    height: 1px;
+}
+
+.clear_b {
+    clear: both;
+    content: "";
+}
+
+/* === header begin === */
+
+.head {
+    background: #1b90a1;
+    height: 60px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/*.nav_main{width: 605px;}*/
+.nav_main li {
+    float: left;
+}
+
+.nav_main a {
+    color: #fff;
+    line-height: 60px;
+    display: block;
+    height: 60px;
+    padding: 0 12px;
+}
+
+.nav_main a:hover {
+    background: #0c7c8c;
+
+}
+
+.nav_main a:active, .default, a.default:hover {
+    background: #046978;
+}
+
+.icon_link1 {
+    margin-left: 79px
+}
+
+.icon_link1, .icon_link12 {
+    margin-right: 6px;
+    margin-top: 7px;
+}
+
+/* === header end banner begin === */
+#banner {
+    background: #a1cdc0 url("../images/banner_bg.jpg") no-repeat top center;
+}
+
+/* === banner end === */
+
+/* === container begin === */
+
+/* item_title begin */
+.item_title {
+    height: 75px;
+    background: #fff url("../images/arrow.png") center bottom no-repeat;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.item_title h2 {
+    color: rgb(204, 204, 204);
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 38px;
+}
+
+.item_title h5 {
+    color: rgb(149, 150, 152);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+/* works begin */
+
+#works {
+    background: #49c9b0;
+}
+
+#works p {
+    color: #fff;
+    text-align: center;
+    height: 65px;
+    padding-top: 25px;
+}
+
+.button_group {
+    width: 525px;
+    margin: 0 auto;
+}
+
+.button_group li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #2f9982;
+    border-radius: 5px;
+    color: #fff;
+    float: left;
+    margin: 0 5px;
+}
+
+.button_group li a:hover {
+    background: #0a705e;
+}
+
+.works_img {
+    font-size: 0;
+    margin: 0 auto;
+    width: 860px;
+    height: 535px;
+    padding-top: 25px;
+
+}
+
+.works_img li {
+    float: left;
+    margin: 6px;
+}
+
+.works_img li a {
+    opacity: 0.8;
+}
+
+.works_img li a:hover {
+    opacity: 1;
+}
+
+/* technology_share begin */
+
+#technology_share, #journal {
+    background: #fff;
+}
+
+.share_new, .share_item {
+    border-bottom: 1px dashed #bbb;
+    padding: 15px 0;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.share_item:last-child {
+    border-bottom: none;
+}
+
+.share_new h3 {
+    color: #666;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.share_new p {
+    color: #666;
+    letter-spacing: 1px;
+    line-height: 26px;
+    text-indent: 2em;
+}
+
+.share_button, .share_new p {
+    padding: 10px 0;
+}
+
+/* share_new end*/
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 685px;
+}
+
+.share_item_center {
+    width: 950px;
+}
+
+.share_button ul li, .share_button_s ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.share_item_center p, .right p {
+    height: 93px;
+    color: #666;
+    line-height: 26px;
+}
+
+.share_item_center h3, .right h3 {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+a.more {
+    color: #1b90a1;
+}
+
+a.more:hover {
+    text-decoration: underline;
+}
+
+/* photo_group begin */
+.photo_group {
+    font-size: 0;
+}
+
+.photo_group ul li {
+    float: left;
+}
+
+.photo_group ul li img {
+    width: 250px;
+    height: 187px;
+}
+
+.photo_group li a {
+    opacity: 0.8;
+}
+
+.photo_group li a:hover {
+    opacity: 1;
+}
+
+/* about begin */
+
+.about_title {
+    background: #209791;
+    padding: 15px 0 15px 55px;
+}
+
+.about_title img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.about_right {
+    float: right;
+    width: 680px;
+}
+
+.about_right h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.about_right h5 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.about_right h1, .about_right h5 {
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+}
+
+.about_right a {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.about_right a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* evaluation begin */
+
+.evaluation {
+    margin: 16px 0;
+    background: #fff;
+    padding-left: 12px;
+}
+
+.evaluation ul {
+    float: left;
+    width: 33%;
+    padding: 10px 30px 30px 30px;
+    box-sizing: border-box;
+    color: #666;
+}
+
+.evaluation ul li h3 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Competitiveness {
+    background: #f2f2f2;
+    padding: 30px 0 30px 18px;
+}
+
+.Competitiveness > div:nth-child(2) {
+    margin: 0 20px;
+}
+
+.Competitiveness > div:nth-child(3) {
+    margin-right: 20px;
+}
+
+.Competitiveness_item {
+    width: 23%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    text-align: center;
+    height: 360px;
+}
+
+.Competitiveness_item h3 {
+    margin-bottom: 10px;
+}
+
+.Competitiveness_item p {
+    text-align: left;
+}
+
+/* contact begin*/
+
+#contact {
+    width: 1000px;
+    background: #a1cdc0 url("../images/contact_bg.jpg") center bottom no-repeat;
+    color: #fff;
+    height: 400px;
+    padding-top: 20px;
+}
+
+#contact h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 70px;
+
+}
+
+.contact_main {
+    width: 220px;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+ul.contact_main li:last-child {
+    text-align: center;
+    margin: 15px 0;
+}
+
+/*footer ����*/
+footer {
+    height: 80px;
+    line-height: 80px;
+    color: #1b90a1;
+    text-align: center;
+    margin-bottom: 40px;
+}
