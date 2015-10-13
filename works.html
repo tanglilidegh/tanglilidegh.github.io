@@ -1,54 +1,54 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>汤利利的个人作品</title>
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/reset.css">
-    <link type="text/css" rel="stylesheet" href="fancybox/source/jquery.fancybox.css">
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
-    <script src="js/jquery.lazyload.min.js" type="text/javascript"></script>
-
-    <link>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<title>汤利利的个人作品</title>
+	<link rel="stylesheet" href="css/lrtk.css" />
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lazyload.min.js"></script> 
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
 </head>
 <body>
-    <div id="main">
-    </div>
+<h1>汤利利的个人作品</h1>
 
-    <script type="application/javascript" >
-        var colum = 4;
-        $(function(){
-            for(var i = 0 ;i < colum; i++){
-                $("#main").append('<div></div>');
-            }
-            var k= 0;
+<div id="content">
 
-            for(var i=1;i<30;i++) {
-                $("#main > div:eq("+k+")").append('<a class="fancybox box" rel="gallery1" href="http://7xngp8.com1.z0.glb.clouddn.com/1('+i+').jpg" title=""><img  alt="" class="lazy" src="http://7xngp8.com1.z0.glb.clouddn.com/1('+i+').jpg?imageMogr2/thumbnail/180x"/></a>');
-                k=k+1;
-                if(k == colum){
-                    k=0;
-                }
-            }
+	<div id="images">
+		<h2>Web页面设计作品</h2>
+		<hr />
+		<div class="imgbox-wraper" data-from="1" data-to="64" data-folder="1"></div>
+		
+		<h2>APP界面设计作品</h2>
+		<hr />
+		<div class="imgbox-wraper" data-from="1" data-to="12" data-folder="2"></div>
+		
+		<h2>平面广告设计作品</h2>
+		<hr />
+		<div class="imgbox-wraper" data-from="1" data-to="28" data-folder="3"></div>
+		
+		<h2>logo设计作品</h2>
+		<hr />
+		<div class="imgbox-wraper" data-from="1" data-to="14" data-folder="4"></div>
+		
+		<h2>VI设计作品</h2>
+		<hr />
+		<div class="imgbox-wraper" data-from="1" data-to="12" data-folder="5"></div>
+		
+		<h2>包装设计作品</h2>
+		<hr />
+		<div class="imgbox-wraper" data-from="1" data-to="8" data-folder="6"></div>
+		
+		<script type="text/html" id="item-temp">
+			<a  href="{{big}}"  class="fancybox" rel="gallery">
+				<img class="lazy" data-original="{{small}}" width="260" heigh="260"/>
+			</a>
+		</script>	
 
-            for(var i=31;i<140;i++) {
-              $("#main > div:eq("+k+")").append('<a class="fancybox box" rel="gallery1" href="http://7xngp8.com1.z0.glb.clouddn.com/1('+i+').jpg" title=""><img  alt="" class="lazy" data-original="http://7xngp8.com1.z0.glb.clouddn.com/1('+i+').jpg?imageMogr2/thumbnail/180x"/></a>');
-              k=k+1;
-              if(k == colum){
-                  k=0;
-              }
-            }
 
-            $(".fancybox").fancybox({
-                openEffect	: 'none',
-                closeEffect	: 'none'
-            });
-
-            $("img.lazy").lazyload();
-
-
-        })
-    </script>
+	</div>
+</div>
 </body>
 </html>

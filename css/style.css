@@ -187,9 +187,9 @@ body {
     opacity: 1;
 }
 
-/* technology_share begin */
+/* geek_salon begin */
 
-#technology_share, #journal {
+#geek_salon, #journal {
     background: #fff;
 }
 
@@ -300,17 +300,18 @@ a.more:hover {
 }
 
 .about_right h1 {
-    font-size: 36px;
+    font-size: 26px;
     margin-top: 10px;
 }
 
 .about_right h5 {
-    font-size: 24px;
+    font-size: 14px;
     margin-bottom: 25px;
+    opacity: 0.8;
+    font-weight: normal;
 }
 
 .about_right h1, .about_right h5 {
-    font-weight: bold;
     color: #fff;
     line-height: 50px;
 }
@@ -409,7 +410,7 @@ ul.contact_main li:last-child {
     margin: 15px 0;
 }
 
-/*footer ����*/
+/*footer begin*/
 footer {
     height: 80px;
     line-height: 80px;
