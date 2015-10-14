@@ -103,22 +103,8 @@ body {
 /* === header end banner begin === */
 #banner {
     background: #a1cdc0 url("../images/banner_bg.jpg") no-repeat top center;/**/
+}
 
-}
-.banner_content{
-    position: relative;
-}
-.banner_content a{
-    position: absolute;
-    left: 454px;
-    top: 203px;
-    color: #f6246f;
-    font-size: 24px;
-    font-weight: bold;
-}
-.banner_content a:hover{
-    color: #1b90a1;
-}
 /* === banner end === */
 
 /* === container begin === */
@@ -159,7 +145,7 @@ body {
 }
 
 .button_group {
-    width: 575px;
+    width: 585px;
     margin: 0 auto;
 }
 
