@@ -18,13 +18,21 @@ body {
 	border: 1px solid #CCC;
 }
 
+.header{
+	width: 1182px;
+	margin: 15px auto;
+	text-align: center;
+}
+.header a{
+	color: #aaa;
+	text-decoration: none;
+}
 h1 {
 	margin: 0;
-	text-align:center;
 	font-size:38px;
 	color:#666;
 	font-weight: normal;
-	line-height: 85px;
+	line-height: 60px;
 }
 h2 {
 	margin: 0;

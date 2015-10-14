@@ -32,7 +32,6 @@ body {
 .w1000 {
     width: 1000px;
     margin: 0 auto;
-    /*background: #000;*/
 }
 
 .color255 {
@@ -65,13 +64,12 @@ body {
     height: 60px;
 }
 
-.logo {
+.nav_main li a.logo {
     font-size: 28px;
     font-weight: bold;
     margin-right: 15px;
 }
 
-/*.nav_main{width: 605px;}*/
 .nav_main li {
     float: left;
 }
@@ -81,12 +79,13 @@ body {
     line-height: 60px;
     display: block;
     height: 60px;
-    padding: 0 12px;
+    padding: 0 16px;
+    letter-spacing: 2px;
+    font-size: 14px;
 }
 
 .nav_main a:hover {
     background: #0c7c8c;
-
 }
 
 .nav_main a:active, .default, a.default:hover {
@@ -94,19 +93,32 @@ body {
 }
 
 .icon_link1 {
-    margin-left: 79px
+    margin-left: 115px
 }
 
 .icon_link1, .icon_link12 {
-    margin-right: 6px;
     margin-top: 7px;
 }
 
 /* === header end banner begin === */
 #banner {
-    background: #a1cdc0 url("../images/banner_bg.jpg") no-repeat top center;
-}
+    background: #a1cdc0 url("../images/banner_bg.jpg") no-repeat top center;/**/
 
+}
+.banner_content{
+    position: relative;
+}
+.banner_content a{
+    position: absolute;
+    left: 454px;
+    top: 203px;
+    color: #f6246f;
+    font-size: 24px;
+    font-weight: bold;
+}
+.banner_content a:hover{
+    color: #1b90a1;
+}
 /* === banner end === */
 
 /* === container begin === */
@@ -147,7 +159,7 @@ body {
 }
 
 .button_group {
-    width: 525px;
+    width: 575px;
     margin: 0 auto;
 }
 
@@ -214,7 +226,7 @@ body {
 .share_new p {
     color: #666;
     letter-spacing: 1px;
-    line-height: 26px;
+    line-height: 22px;
     text-indent: 2em;
 }
 
@@ -240,11 +252,16 @@ body {
     float: left;
     margin-right: 10px;
 }
-
+.right p{
+    line-height: 22px;
+    text-indent: 2em;
+}
+.share_item_center p{
+    line-height: 26px;
+}
 .share_item_center p, .right p {
     height: 93px;
     color: #666;
-    line-height: 26px;
 }
 
 .share_item_center h3, .right h3 {
