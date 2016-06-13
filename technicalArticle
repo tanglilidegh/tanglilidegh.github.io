@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>技术文章都写在这里</title>
+</head>
+<body>
+	<ul>
+		<li><a href="#">文章菜单</a></li>
+		<li><a href="#">文章菜单</a></li>
+		<li><a href="#">文章菜单</a></li>
+		<li><a href="#">文章菜单</a></li>
+		<li><a href="#">文章菜单</a></li>
+		<li><a href="#">文章菜单</a></li>
+	</ul>
+</body>
+</html>
