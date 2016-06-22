@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/geekSalon_style.css">
+</head>
+<body>
+<div class="header">
+    <ul class="menu">
+        <li><a href="#npm">npm</a></li>
+        <li><a href="#gulp">gulp</a></li>
+        <li><a href="#grunt">grunt</a></li>
+        <li><a href="#fix">fix</a></li>
+        <li><a href="#browserify">browserify</a></li>
+        <li><a href="#webpack">webpack</a></li>
+        <li><a href="#bower">bower</a></li>
+        <li><a href="#yeoman">yeoman</a></li>
+        <li><a href="#component">component</a></li>
+        <li><a href="#duo">duo</a></li>
+        <li><a href="#compile">compile</a></li>
+    </ul>
+</div>
+<br>
+<div class="note">
+    <p>1）Gulp / Grunt 可以理解为帮助前端自动化的工具，用于优化前端工作流程。比如自动刷新页面、combo、压缩css、js、编译less等等。个人推荐Gulp。</p>
+    <p>2）browserify / webpack 提供的是一个前端模块化的方案，和requirejs类似但又有不同。 个人推荐webpack</p>
+    <p>requirejs是一种在线"编译" 模块的方案，相当于在页面上加载一个AMD 解释器，以便于览器能够识别 define、exports、module，而这些东西就是用于模块化的关键。</p>
+    <p>而browserify / webpack，则是一个预编译模块的方案。它是预编译的，不需要在浏览器中加载解释器。</p>
+    <p>因此完全可以gulp+webpack 或者gulp+browserify这样的方式搭配使用，甚至，只使用webpack，由于其强大的插件支持，也能满足绝大多数需求了。</p>
+    <p>基于stream，速度快，简单易懂，亲和力强。gulp也可以和webpack一块用啊。关于gulp分享一下。</p>
+</div>
+<div class="npm-note note" id="npm">
+    <h1>NPM 是一个包管理器</h1>
+    <p>NPM 是一个包管理器。它和系统软件包管理器做同样的工作。但对 JavaScript 而言，这是下载你的所有环境的工具。NPM 负责下载包，解决对他们的依赖并且在项目周围提供包的抽象。所以，当另一家开发商想与你的代码库工作时，他所需要做的是发出 NPM install 命令然后所有的依赖会自动安装。在这样的包中，你还可以包含许可证信息、姓名、关键词、版本、描述和许多其他元数据的代码。如果你正在开发一个库，NPM 还可以帮助您在以后发布它并使其可用于所有在 Node.js 的环境中工作的开发人员。</p>
+</div>
+<div class="gulp-note note" id="gulp">
+    <h1>Gulp：一个NodeJS项目构建工具。</h1>
+    <div class="text">
+        <p>gulp是工具链，可以配合各种插件做js压缩，css压缩，less编译等工作</p>
+        <p>Gulp 是一种构建系统或任务执行器。它比模块打包机工作在一个更高的水平上。虽然模块打包机工作于模块和依赖树，Gulp 适用于你的文件结构 - 并能在其上执行任务。这与 UNIX 环境下的一个 make 工具非常类似。它基本上是一种序列化运行其他工具的方式。</p>
+        <p>在 Gulp 中你可以定义手动运行的任务。您可以定义这些任务需要在哪些文件上运行，关于他们需要完成哪些需求。</p>
+        <p>Gulp 可以操作工作流抽象。构建过程是一组工作流 – gulp 提供一个文件流并且通过另一个流来传送该流 - 如“压缩合并”流需要文件流作为输入，并产生压缩合并文件作为输出。然后你可以把它传送到另一个流，在压缩合并文件上实现相同功能等等。</p>
+        <p>所以基本上这个工具是关于一组文件工作的流程编排。这些工具可以压缩合并你的代码、修改、优化你的资源、压缩合并、从注释来编译文件、生成源地图、运行测试、部署你的代码....并且他们是非常通用的 - 对于文件同样有效。Gulp 本身对于模块或你的文件的意义并非一无所知- 但它可以让其他工具来对这些文件执行任务。</p>
+        <p>Gulp 还带有基本的观察器 - 你可以观察一组文件，并在他们改变时对其执行任务。
+        <p>构建系统可以做很多模块打包机可以做的事情。但他们可能通过一个不太优化的方式来实现，因为他们都工作于文件 - 他们不知道模块打包机知道的抽象概念。你也可以在你的构建系统中运行你的模块打包机。所以这是一个比模块打包机更高层次的工具。在决定应该在您的环境使用什么时应该把它考虑在内。</p>
+        <p>Gulp 是基于 Node Stream 创建的，Node Stream 是 Node.JS 中及其重要的设计模式，天生就具有良好的互操作性，这是 Webpack 比不了的（但同时也是很多不熟悉 Node Stream 的人不愿意用 Gulp 的原因）。</p>
+    </div>
+    <h3>1.全局安装</h3>
+    <span>npm install -g gulp</span>
+    <p>或</p>
+    <span>npm install --global gulp</span>
+    <p>或开发模式安装且加入到package.json中</p>
+    <span>npm install --save-dev gulp</span>
+    <h3>2.常用gulp插件</h3>
+    <p>gulp-react 可以将jsx文件转换为js文件</p>
+    <h3>3.gulpfile.js</h3>
+    <pre>
+        var gulp = require('gulp');
+        gulp.task('default',function(){
+        });
+        gulp.task('default',['jsx']); //可以将默认命令指定为jsx，执行时就可以直接用指令gulp而非gulp jsx
+    </pre>
+    <h3>4.example</h3>
+    <pre>
+gulp.task('jsx',function(){
+    gulp.src('./app.jsx')
+        .pipe(react())
+        .pipe(gulp.dest('./app.js'));
+});
+gulp.task('sass',function(){
+    gulp.src('./sass/**/*.scss')
+        .pipe(sass().on('error',sass.logError))
+        .pipe(gulp.dest('./css'));
+});
+    </pre>
+</div>
+<div class="grunt-note note" id="grunt">
+    <h1>grunt</h1>
+</div>
+<div class="fix-note note" id="fix">
+    <h1>fix</h1>
+</div>
+<div class="browserify-note note" id="browserify">
+    <h1>Browserify：浏览器端代码模块化工具（可将Node.JS的CommonJS格式的代码转换为浏览器可识别的JS），部署时处理代码依赖，将模块打包到一起。</h1>
+    <h2>
+        Browserify本身不是模块管理器，只是让服务器端的CommonJS格式的模块可以运行在浏览器端。这意味着通过它，我们可以使用Node.js的npm模块管理器。所以，实际上，它等于间接为浏览器提供了npm的功能。</h2>
+
+    <h3>1.打包为单个文件存在的问题：</h3>
+    <ul>
+        <li>暂时用不到的代码也会被打包，体积大，首次加载速度慢</li>
+        <li>只要一个模块更新，整个文件缓存失效</li>
+    </ul>
+    <h3>2.解决方案：entry point，入口点技术</h3>
+    <h3>3.安装及简单实用</h3>
+    <span>
+        npm install browserify --save <br>
+        browserify roboot.js>bundle.js <br>
+        或者全局安装 <br>
+        $ npm install -g browserify  <br>
+        然后，编写一个服务器端脚本。 <br>
+        var uniq = require('uniq');<br>
+        var nums = [ 5, 2, 1, 3, 2, 5, 4, 2, 0, 1 ];<br>
+        console.log(uniq(nums));<br>
+        上面代码中uniq模块是CommonJS格式，无法在浏览器中运行。这时，Browserify就登场了，将上面代码编译为浏览器脚本。<br>
+        $ browserify robot.js > bundle.js <br>
+        生成的bundle.js可以直接插入网页。<br>
+        &lt;script src="bundle.js"&gt;&lt;/script&gt; <br>
+        Browserify编译的时候，会将脚本所依赖的模块一起编译进去。这意味着，它可以将多个模块合并成一个文件。
+
+    </span>
+    <h3>4.安装插件，reactify是将jsx解析为js，第二个插件是将browserify生成的代码翻译成gulp可以理解的代码</h3>
+    <span>
+        npm install reactify--save <br>
+npm     install vinyl-source-stream --save
+    </span>
+    <h3>5.gulpfile.js</h3>
+    <pre>
+    var gulp = require('gulp');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var reactify = require('reactify');
+gulp.task('jsx',function(){
+    browserify({
+        entries:['./app.jsx'],
+        transform:[reactify] //过滤等处理为js代码
+    })
+        .bundle()           //打包
+        .pipe(source())     //转换为gulp可以理解的
+        .pipe(gulp.dest('./'));
+});
+    </pre>
+</div>
+<div class="webpack-note note" id="webpack">
+    <h1>Webpack：加强版browserify，诞生伊始，瞄准的就是大型单页应用。</h1>
+    <p>webpack更专注于前端的通用解决方案，定义了前端构建的标准模式，同时提供了良好的扩展机制，社区发现良好。</p>
+    <p>Webpack 的优势在于对于复杂的依赖树进行重新批分，以便于前端多页面的复用，这是唯一的优势。但是其自身的 Require 实现也是对目前 Node.JS 的模块系统的一种污染。</p>
+    <div class="text">
+        <p>webpack是文件打包工具，可以把项目的各种js文、css文件等打包合并成一个或多个文件</p>
+        <p>Webpack 是一个模块包。这需要模块化发展你的代码库，并且产生一个输出，将模块转换成浏览器可以理解的文件。</p>
+        <p>Webpack 中自带开发服务器，它允许你在开发环境中承载你的代码。这种服务器同样也看着你的文件，并在每次做出改变时重新包装代码。</p>
+        <p>模块包还保持文件之间依赖关系的曲线图。这种特性是为什么其他如转换编译之类的编译步骤通常与这样的工具集成的原因。 Webpack 中确实使用这样的装载机来整合。您可以转换编译你的代码，压缩合并，从你的代码库中删除无用代码等等。</p>
+        <p>也能够打包资源而不像 JavaScript - 你可以包含和转换编译样式表，优化静态资源等等。所有这些都集成都由于 Webpack 提供的装载机功能得以实现。</p>
+    </div>
+    <h3>1.安装</h3>
+    <span>npm install -g webpack</span>
+    <h3>2.安装插件，将jsx文件转换为js文件</h3>
+    <span>npm install jsx-loader --save</span>
+    <h3>3.两大特色</h3>
+    <ul>
+        <li>code splitting可以自动完成，无需手动处理</li>
+        <li>loader可以处理各种类型的静态文件，并且支持串联操作</li>
+    </ul>
+    <h3>4.webpack.config.js</h3>
+    <pre>
+module.exports = {
+    entry:'./app.jsx',
+    output: {
+        path:'./',
+        filename:'app.js',
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.jsx$/,
+                loader: 'jsx-loader',
+            }
+        ]
+    }
+}
+    </pre>
+    <h3>5.演示提取公共代码</h3>
+    <pre>
+var webpack = require('webpack');
+module.exports = {
+    entry:{
+        app:'./app.jsx',
+        app2: './app2.jsx'
+    },
+    output: {
+        path:'./',
+        filename:'[name].js',
+    },
+    plugins:[
+        new webpack.optimize.CommonsChunkPlugins("common.js")
+    ],
+    module: {
+        loaders: [
+            {
+                test: /\.jsx$/,
+                loader: 'jsx-loader',
+            }
+        ]
+    }
+}
+    </pre>
+</div>
+<div class="compare">
+    <p>
+        webpack是一个比browserify功能更强大的模块加载器。既然是模块加载器，当然就包括对各种各样模块的加载，包括SASS/LESS/CoffeeScript/png/jpg等，以及webpack对于node_module模块加载已经非常完善了。</p>
+
+    <p>那么，为什么还需要bower呢？由于前端开发很多第三方模块并非都以标准npm包形式存在，有一些非主流，或者各种原因没放到npm上的包，可以在bower找到。</p>
+
+    <p>基于这个原因，使用webpack时候，凭着能用npm就用（依赖加载更加方便，功能更加强大），不能用的时候使用bower声明第三方模块依赖，然后使用js/css加载方式进行加载。</p>
+
+    <p>值得一提的是，webpack官方也提供非常便利的方式加载bower模块（模块的主要文件，被声明在bower.json main属性里面）,通过配置后就可以很方便地沿用require来加载bower模块。</p>
+</div>
+<div class="bower-note note" id="bower">
+    <h1>Bower：为模块的安装、升级和删除，提供一种统一的、可维护的管理模式。</h1>
+    <h2>Bower的主要作用是，为模块的安装、升级和删除，提供一种统一的、可维护的管理模式。</h2>
+    <div class="text">
+        <p>bower是包管理器，用来管理你项目里的那些外部依赖的。</p>
+        <p>bower是twitter推出包管理工具。其特点是对包结构没有强制规范，也因此bower本身并不提供一套构建工具，它充当的基本上是一个静态资源的共享平台。</p>
+        <p>
+            bower本身不存储模块文件本身（NPM以及SPM则会将模块作者的文件打包保存在自己的服务器中），也不保存模块的版本信息。模块的发布者通过注册（register）的方式，将模块的可访问的公开的git地址记录在bower的数据库中。而所有的版本都是通过模块发布者自己控制代码库的tag来决定。</p>
+        <p>bower在安装流程基本上可以简单认为是将注册的git地址中的特定tag clone一份到你本地的bower_components 目录中。</p>
+        <p>
+            看起来bower本身提供的功能，以及实现都比价简单，但是它确实使用最广的前端模块管理工具。它在github上的项目有1w+的star。之所以bower能这么流行，得益于它宽松的规范能很好地直接应用在很多已经存在的项目中，所有人都能通过简单地添加一个bower.json以及补充相关信息，不需要修改代码和目录结构，就马上开始使用注册发布自己的模块。</p>
+
+
+    </div>
+    <h3>1.安装</h3>
+
+    <span>npm install -g bower</span>
+    <h3>2.常用命令</h3>
+    <h3>默认下载至bower_componets目录下</h3>
+    <span>
+    #安装模块
+    <strong>bower install jquery</strong>
+    #github用户名/项目名
+    <strong>bower install jquery/jquery</strong>
+    #git代码仓库地址
+    <strong>bower install git://github.com/user/package.git</strong>
+    #模块网址
+    <strong>bower install http://example.com/script.js</strong>
+    #更新模块
+    <strong>bower update</strong>
+    <strong>bower update jquery</strong>
+    #卸载模块（其所依赖的一同被卸载）
+    <strong>bower uninstall jquery</strong>
+    #应用程序已安装包列表
+    <strong>bower list</strong>
+    #搜索包
+    <strong>bower search bootstrap</strong>
+    #查看包信息
+    <strong>bower info bootstrap</strong>
+    #初始化并生成bower.json文件
+    <strong>bower init</strong>
+    #安装到bower.json文件中
+    <strong>bower install bootstrap --save</strong>
+    </span>
+    <p>所谓"安装"，就是将该模块（以及其依赖的模块）下载到当前目录的bower_components子目录中。下载后，就可以直接插入网页。</p>
+    <span>&lt;script src="/bower_componets/jquery/dist/jquery.min.js"&gt;</span>
+    <h3>3.bower update命令用于更新模块。</h3>
+    <span>$ bower update jquery</span>
+    <p>如果不给出模块的名称，则更新所有模块。</p>
+    <h3>4.bower uninstall命令用于卸载模块。</h3>
+    <span>$ bower uninstall jquery</span>
+    <p>注意，默认情况下，会连所依赖的模块一起卸载。比如，如果卸载jquery-ui，会连jquery一起卸载，除非还有别的模块依赖jquery。</p>
+</div>
+<div class="yeoman-note note" id="yeoman">
+    <h1>Yeoman：通过Grunt和Bower的包装为开发者提供一个易用的工作流。</h1>
+    <h3>1.安装</h3>
+    <span>npm install -g yo</span>
+</div>
+<div class="component-note note" id="component">
+    <h1>Component是Express框架的作者TJ Holowaychuk开发的模块管理器。它的基本思想，是将网页所需要的各种资源（脚本、样式表、图片、字体等）编译后，放到同一个目录中（默认是build目录）。</h1>
+    <h3>1.安装Component</h3>
+    <span>$ npm install -g component@1.0.0-rc5</span>
+    <p>上面代码之所以需要指定Component的版本，是因为1.0版还没有正式发布。</p>
+    <h3>2.然后，在项目根目录下，新建一个index.html。</h3>
+    <pre>
+   &lt;!DOCTYPE html&gt;
+　　&lt;html&gt;
+　　  &lt;head&gt;
+　　    &lt;title&gt;Getting Started with Component&lt;/title&gt;
+　　    &lt;link rel="stylesheet" href="build/build.css"&gt;
+　　  &lt;/head&gt;
+　　  &lt;body&gt;
+　　    &lt;h1&gt;Getting Started with Component&lt;/h1&gt;
+　　    &lt;p class="blink">Woo!&lt;/p&gt;
+ 　　   &lt;script src="build/build.js"&gt;&lt;/script&gt;
+　　  &lt;/body&gt;
+　　&lt;/html&gt;
+
+    </pre>
+    <p>上面代码中的build.css和build.js，就是Component所要生成的目标文件。</p>
+    <p>接着，在项目根目录下，新建一个component.json文件，作为项目的配置文件。</p>
+    <pre>
+    {
+　　  "name": "getting-started-with-component",
+　　  "dependencies": {
+　　    "necolas/normalize.css": "^3.0.0"
+　　  },
+　　  "scripts": ["index.js"],
+　　  "styles": ["index.css"]
+　　}
+    </pre>
+    <p>
+        上面代码中，指定JavaScript脚本和样式表的原始文件是index.js和index.css两个文件，并且样式表依赖normalize模块（不低于3.0.0版本，但不高于4.0版本）。这里需要注意，Component模块的格式是"github用户名/项目名"。</p>
+    <h3>3.最后，运行component build命令编译文件。</h3>
+    <pre>
+     $ component build
+　　   installed : necolas/normalize.css@3.0.1 in 267ms
+　　       build : resolved in 1221ms
+　　       build : files in 12ms
+　　       build : build/build.js in 76ms - 1kb
+　　       build : build/build.css in 80ms - 7kb
+    </pre>
+    <p>在编译的时候，Component自动使用autoprefixer为CSS属性加上浏览器前缀。</p>
+    <p>目前，Component似乎处于停止开发的状态，代码仓库已经将近半年没有变动过了，官方也推荐优先使用接下来介绍的Duo。</p>
+</div>
+<div class="duo-note note" id="duo">
+    <h1>Duo是在Component的基础上开发的，语法和配置文件基本通用，并且借鉴了Browserify和Go语言的一些特点，相当地强大和好用。</h1>
+    <h3>1.首先，安装Duo。</h3>
+    <span>$ npm install -g duo</span>
+    <p>然后，编写一个本地文件index.js。</p>
+    <span>
+    var uid = require('matthewmueller/uid');
+　　 var fmt = require('yields/fmt');
+　　
+　　 var msg = fmt('Your unique ID is %s!', uid());
+　　 window.alert(msg);
+    </span>
+    <p>上面代码加载了uid和fmt两个模块，采用Component的"github用户名/项目名"格式。</p>
+    <h3>2.接着，编译最终的脚本文件。</h3>
+    <span>　$ duo index.js > build.js</span>
+    <p>编译后的文件可以直接插入网页。</p>
+    <span>&lt;script src="build.js"&gt;&lt;/script&gt;</span>
+    <h3>3.Duo不仅可以编译JavaScript，还可以编译CSS。</h3>
+    <span>
+   @import 'necolas/normalize.css';
+　　@import './layout/layout.css';
+　　
+　　body {
+　　  color: teal;
+　　  background: url('./background-image.jpg');
+　　}
+    </span>
+    <p>编译时，Duo自动将normalize.css和layout.css，与当前样式表合并成同一个文件。</p>
+    <span>　$ duo index.css > build.css</span>
+    <p>编译后，插入网页即可。</p>
+    <span>&lt;link rel="stylesheet" href="build.css"&gt;</span>
+</div>
+<hr>
+<div class="note" id="compile">
+    <h1>转换编译器</h1>
+    <P>Babel.js 它将你的代码通过 2015 版 ECMAScript 标准书写，再以旧浏览器可以运行的旧标准来生成代码</P>
+</div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用video.js开发HTML5播放视频</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            padding: 50px;
+            background-color: rgba(123, 234, 194, 0.27);
+        }
+        a{
+            color: #bc5e0a;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 30px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        hr{
+            height: 1px;
+            border: none;
+            outline: none;
+            background-color: rgba(11, 22, 15, 0.05);
+        }
+        p{
+            text-indent: 2em;
+            line-height: 24px;
+            color: rgba(12, 24, 18, 0.6);
+        }
+        span{
+            line-height: 18px;
+            color: rgba(12, 24, 18, 0.6);
+        }
+        h1{
+            text-align: center;
+            color: #08887c;
+        }
+        pre{
+            padding: 20px;
+            background-color: rgba(0, 169, 143, 0.45);
+            color: #05524a;
+            font-size: 14px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>用video.js开发HTML5播放视频</h1>
+    <p>
+        最近公司有一个新的需要,通过微信分享,在微信或手机浏览器中打开视频,这个视频有分直播和录播/回放,如果是直播,采用的是腾讯云上路演的js-SDK,而录播/回放我自己采用的是video.js这个插件,video.js在目前同类插件中热门排行第一,相关文档也比较齐全,并且大部分能兼容IOS和Android手机的浏览器。</p>
+    <p>下面的代码因功能的不同分成了两部分,分别是前面提到的两种情况——直播和录播/回放;</p>
+    <p>
+        直播,必须要引用腾讯云的http://qzonestyle.gtimg.cn/open/qcloud/video/live/h5/live_connect.js,这个代码可以放在开始写跟这个js相关的代码前面。具体的使用在js代码上面有介绍。</p>
+    <hr>
+    <h1>直播的HTML代码</h1>
+    <hr>
+<pre>
+&lt;!--在使用flexible的时候需要加上下面三句meta标签代码, 可以在不同移动设备上实现响应式效果--&gt;
+&lt;meta name="format-detection" content="telephone=no"&gt;
+&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+&lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;
+
+&lt;!-- 引用flexible.js --&gt;
+&lt;script src="js/flexible.js"&gt;&lt;/script&gt;
+
+&lt;!--下面这个是为了兼容ie9以下而写,如果不需要兼容i9以下可以不需要--&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+&lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+
+&lt;!-- 加载样式 --&gt;
+&lt;link rel="stylesheet" href="css/detail.css"&gt;
+
+&lt;body&gt;
+&lt;div class="video-box"&gt;
+    &lt;div id="player"&gt;&lt;/div&gt;
+    &lt;!-- 直播与直播人信息及id人数 START  --&gt;
+    &lt;div class="video-info">要浮在视频画面上面的头像和按钮&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+</pre>
+    <hr>
+    <h1>直播的js代码</h1>
+    <hr>
+<pre>
+    &lt;!-- 引用腾讯云路演的js地址--&gt;
+    &lt;script src="http://qzonestyle.gtimg.cn/open/qcloud/video/live/h5/live_connect.js" charset="utf-8"&gt;&lt;/script&gt;
+    // 控制播放直播视频 START
+    $(function () {
+        var player = new qcVideo.Player(
+                //页面放置播放位置的元素 ID
+                "player", {
+                    //播放器宽度,单位像素(必选参数)
+                    "width": 460,
+                    //播放器高度,单位像素(必选参数)
+                    "height": 680,
+                    "live_url": "rtmp://3129.liveplay.myqcloud.com/live/3129_ff8859bd2c7711e6a2cba4dcbef5e35a",
+                    "live_url2": "http://3129.liveplay.myqcloud.com/3129_ff8859bd2c7711e6a2cba4dcbef5e35a.m3u8"
+                    //直播画面开始播放前,最大缓存时间 ; 这个属性可有效下行带宽不足导致避免 rtmp 直播卡顿的情况(可选参数)
+                    // "cache_time": 0.2
+                });
+    });
+    // 控制播放直播视频 END
+</pre>
+    <p>腾讯云路演SDK的使用方法,有一个专门的SDK开发指南,文档中有一个播放器构造函数qcVideo.Player(id,option),同时,还有一个清晰的例子,只要根据这个例子去修改参数就好了,
+        它提供了两个示例,一个是针对传直播频道 ID 的方式,另一个是针对传直播频道地址的方式,你可以根据自己的情况去选择,我们选择的是传直播频道地址的方式,
+        在live_url这配置项中有建议填两个地址,一个是rtmp:开头的,一个是http://开头的,不同的浏览器或播放器会根本设备能支持的方式去读取视频流,
+        如果只放http://开头的地址,有的浏览器会自动使用Flash来播放,而苹果手机不支持Flash,所以没有办法播放。
+    </p>
+
+    <p>接下来的问题就是从后台读取视频文件了。</p>
+<pre>
+    // 后台提定的请求地址 指定用get请求方式
+    var configUrl = "/activity-web-live/liveheartbeat";
+    // 后台在页面中会添加一个activity_id 的变量,根据这个变量,发送请求
+    var activity_id = "&lt;?php echo $data['activity_id']; ?&gt;";
+    // 由于我们要控制新用户只能观看10分钟,所以每隔3秒要去轮询一次,获取该视频是否还能继续播放。
+    var intervalTime = 3 * 1000;
+    // $code = 0;//可以继续观看   $code = 1;//到达观看时长   $code = 2;//直播结束   $code = -1;//参数不全
+    $(function () {
+        // 每隔一段时间。执行一下getPlayTime函数
+        var loopRequest = setInterval(getPlayTime, intervalTime);
+        function getPlayTime() {
+            // 根据activity_id去发送请求 ,后台返回状态码
+            $.get(configUrl, {"activity_id": activity_id}, function (data) {
+                // 得到状态码,根据不同的状态码,去执行不同的代码
+                var code = data.code;
+                switch (code) {
+                    case 1:  //  可播放的时间已到,弹出提示用户去下载APP的层
+                        showdiv2();
+                        // 清空定时器
+                        clearInterval(loopRequest);
+                        break;
+                    case 2:  //直播结束
+                        showdiv2();  //弹出提示用户去下载APP的层
+                        // 清空定时器
+                        clearInterval(loopRequest);
+                        break;
+                    case -1:
+                        confirm("直播地址有误,请稍后重试");
+                        clearInterval(loopRequest);
+                        break;
+                }
+            }, "json");
+        }
+        // 函数写完后先执行一下,看后台返回的状态码是否提示时间到或直播结束,如果是就不需要再用定时器了。
+        getPlayTime()
+    });
+
+    // 显示遮罩层 隐藏视频的div START
+    function showdiv2() {
+        // 移除存放视频的父级元素
+        $(".video-box").remove();
+        // 清空存放视频的元素
+        $("#player").html('');
+        $(".bg").show();
+        // 提示框
+        $("#pauseTipDiv").show();
+        // 当提示框弹出后,遮罩层下面的内容不可滚动
+        $("body,html").css({"overflow": "hidden"});
+    }
+</pre>
+    <hr>
+    <h1>录播/回放的HTML代码</h1>
+    <hr>
+    <p>录播/回放是video.js来开发的,因为录播/回放是播放已经录制好的mp4视频,同样对于新用户也要控制只能播放10分钟,因此,就需要控制播放的时间,
+        而不同的设备使用的播放器各有不同,有些也没有办法能获取到视频当前播放的时间,所以我采用了video.js来开发,因为video.js中有一个currentTime方法
+        和属性,可以得到当前已经播放的时间,因此就拿这个时间跟10分钟做比较,具体的情况,可以看下面的代码</p>
+<pre>
+    &lt;!--在使用flexible的时候需要加上下面三句meta标签代码, 可以在不同移动设备上实现响应式效果--&gt;
+    &lt;meta name="format-detection" content="telephone=no"&gt;
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;
+
+    &lt;!-- 引用flexible.js --&gt;
+    &lt;script src="js/flexible.js"&gt;&lt;/script&gt;
+
+    &lt;link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/videojs/5.9.2/video-js.min.css"/&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+    &lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+    &lt;link rel="stylesheet" href="css/detail.css"&gt;
+
+    &lt;script&gt;
+        document.createElement('video');
+    &lt;/script&gt;
+</pre>
+<pre>
+    &lt;body&gt;
+    &lt;!--video.js推荐将 JavaScript 文件放到 &lt;body&gt 标签中 而不是 &lt;head&gt--&gt
+    &lt;script src="http://cdn.jsdelivr.net/videojs/5.9.2/video.js"&gt;&lt;/script&gt;
+    &lt;div class="video-box"&gt;
+    &lt;!-- 视频内容 START --&gt;
+</pre>
+
+    <p>在HTML中插入一个video的标签,id必不可少,因为呆会写js代码的时候需要用到, 同时,在class中加入相应的类名,前面两个是必需要加的,vjs-big-play-centered
+        是用来控制播放按扭放在屏幕的正中间,这个可以根据需要来加,preload属性是用来控制是否需要缓存,source标签中添加视频的地址,如果是动态加载的话,将地址换成后台代码能匹配到的地址,
+        type="video/mp4"可写可不写,不过建议写上,如果还有其他的视频格式,例如webm、ogv,可以增加source标签,并写在这个标签中。</p>
+    <p>controls是播放器的控制器</p>
+    <p>video标签中还可以加入data-setup=''配置选项,例如data-setup='{ "controls": true, "autoplay": false, "preload": "auto" },
+        如果不写在video标签中,也可以写在js代码中,执行videojs函数的时候可以带三个参数,第二个参数就是配置选项。如下所示:<br/>
+    </p>
+    <pre>
+        videojs(document.getElementById('example_video_1'), {}, function() {
+        // This is functionally the same as the previous example.
+        });
+    </pre>
+    <span>如果想了解更具体的配置,可以在进入到github中了解。</span>
+    <a href="https://github.com/videojs/video.js/blob/stable/docs/index.md">https://github.com/videojs/video.js/blob/stable/docs/index.md</a>
+
+<pre>
+    &lt;video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" preload="none" controls&gt;
+        &lt;source src="http://200005902.vod.myqcloud.com/200005902_a8e9cf4e9d68494cb132168c4b386934.f0.mp4" type="video/mp4"/&gt;
+    &lt;/video&gt;
+    &lt;!-- 视频内容 END --&gt;
+    &lt;!-- 直播与直播人信息及id人数 START  --&gt;
+    &lt;div class="video-info">要浮在视频画面上面的头像和按钮&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+</pre>
+    <hr>
+    <h1>录播/回放的js代码</h1>
+    <hr>
+    <p>录播/回放的js代码相对来说就比较简单了。</p>
+<pre>
+$(function () {
+    // 控制视频播放 START
+    // 获取video元素
+    var example_video_1 = $("#example_video_1");
+    var player = videojs('example_video_1'),
+        defPlayTime = 120;
+    // timeupdate 检测播放时间,  play 开始或恢复播放,  pause 暂停播放
+    player.on('timeupdate', function () {
+        // 判断当前播放时间跟限制的是时间,当播放的时间大于或等于限定的时间时,暂停播放,弹出提示层
+        if (player.currentTime() >= defPlayTime) {
+            player.pause();
+                showdiv();
+        }
+    });
+});
+    </pre>
+    <span>下面是其他方法的示例,具体内容还可以进入这个地址了解:</span>
+    <br>
+    <a href="http://www.tuicool.com/articles/7jYvQrR">http://www.tuicool.com/articles/7jYvQrR</a>
+
+<pre>
+var player = videojs('video');
+// 检测播放时间
+player.on('timeupdate', function () {
+  console.log('当前播放时间：' = player.currentTime());
+}
+});
+// 开始或恢复播放
+player.on('play', function() {
+  console.log('开始/恢复播放');
+});
+// 暂停播放
+player.on('pause', function() {
+  console.log('暂停播放');
+});
+</pre>
+<pre>
+// 显示遮罩层 START
+function showdiv() {
+    $(".video-box").remove();
+    $(".bg").show();
+    $("#pauseTipDiv").show();
+    $("body,html").css({"overflow": "hidden"});
+}
+</pre>
+    <hr>
+    <p>
+        另外,还有几个css上的要点需要说明一下,因为我们的播放视频画面上面还要显示一些信息,而且还有很多遮罩、提示框、蒙层之类的元素,因此,需要给这些信息的父级元素写z-index层级,第一次我写的层级数字
+        有点低,基本上就是12以内,后来改成1000以上,大部分的浏览器就有效了,不过Android手机,有些还是不起作用。
+    </p>
+    <p> video.js本身有自己的视频控制器,所以如果不想用手机默认的可以用下面的css代码隐藏掉。
+
+    </p>
+<pre>
+    video::-webkit-media-controls {
+    display:none !important;
+    }
+</pre>
+    <p>以上便是我在做这个任务时写的代码,目前能记住基本也就这些了。遇到了一些坑,没有什么经验的情况下,也只能慢慢调了,多做几次就熟练了。</p>
+    <br><br><br><br>
+    <h1>The END</h1>
+</div>
+
+</body>
+</html>
