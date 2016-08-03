@@ -12,10 +12,10 @@ body {
 
 #content {
     width: 1185px;
-    margin: 5px auto 50px;
+    margin: 0 auto 50px;
     padding: 25px;
-    background: #FFF;
-    border: 1px solid #CCC;
+    /*background: #FFF;*/
+    /*border: 1px solid #CCC;*/
 }
 
 .header {
@@ -64,9 +64,10 @@ a {
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(220, 220, 220, 1);
+    box-shadow: 0 0 3px 1px rgba(0, 20, 20, .1);
     vertical-align: top;
     margin-bottom: 20px;
+    background: rgba(255, 251, 254, .3);
 }
 
 #imgbox-loading {

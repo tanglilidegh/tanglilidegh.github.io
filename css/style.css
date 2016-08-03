@@ -102,6 +102,7 @@ body {
 
 /* === header end banner begin === */
 #banner {
+    height: 360px;
     background: #a1cdc0 url("../images/banner_bg.jpg") no-repeat top center;/**/
 }
 

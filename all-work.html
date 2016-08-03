@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="UI设计,个人作品,平面设计,网页设计">
+    <meta name="description" content="">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>汤利利的个人作品</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lrtk.css" />
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="head w100">
+        <nav class="w1000">
+            <ul class="nav_main fl_l">
+                <li>
+                    <a href="index.html" class="logo">Sunshine</a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="all-work.html" class="default">作品展示</a></li>
+                        <li><a href="geeksalon.html">技术分享</a></li>
+                        <li><a href="gallery.html">生活随拍</a></li>
+                        <li><a href="journal.html">日志分享</a></li>
+                        <li><a href="about.html">关于我</a></li>
+                        <li><a href="contact.html">联系方式</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#"><img class="icon_link1" src="images/sina_icon.png" alt="分享到新浪微博"></a>&nbsp;&nbsp;
+            <a href="#"><img class="icon_link2" src="images/weixin.png" alt="分享到微信朋友圈"></a>
+        </nav>
+    </header>
+    <!--header end-->
+    <!--=================-->
+    <article id="banner" class="w100">
+        <div class="w1000">
+            <a href="works.html"><img src="images/banner2.png"/></a>
+        </div>
+    </article>
+    <!--banner end-->
+    <!--=================-->
+    <div id="content">
+        <div id="images">
+            <h2>Web页面设计作品</h2>
+            <hr/>
+            <div class="imgbox-wraper" data-from="1" data-to="64" data-folder="1"></div>
+            <h2>APP界面设计作品</h2>
+            <hr/>
+            <div class="imgbox-wraper" data-from="1" data-to="17" data-folder="2"></div>
+            <h2>平面广告设计作品</h2>
+            <hr/>
+            <div class="imgbox-wraper" data-from="1" data-to="28" data-folder="3"></div>
+            <h2>logo设计作品</h2>
+            <hr/>
+            <div class="imgbox-wraper" data-from="1" data-to="14" data-folder="4"></div>
+            <h2>VI设计作品</h2>
+            <hr/>
+            <div class="imgbox-wraper" data-from="1" data-to="12" data-folder="5"></div>
+            <h2>包装设计作品</h2>
+            <hr/>
+            <div class="imgbox-wraper" data-from="1" data-to="8" data-folder="6"></div>
+            <script type="text/html" id="item-temp">
+                <a href="{{big}}" class="fancybox" rel="gallery">
+                    <img class="lazy" data-original="{{small}}" width="260" heigh="260"/>
+                </a>
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
