@@ -554,22 +554,28 @@ footer {
     vertical-align: middle;
 }
 .sportAndReading-wrap .title li:nth-child(1),.sportAndReading-wrap .data .item li:nth-child(1){
-    width: 11%;
+    width: 5%;
+    text-align: center;
+    font-size: 16px;
+    /*color: #8a6343;*/
 }
 .sportAndReading-wrap .title li:nth-child(2),.sportAndReading-wrap .data .item li:nth-child(2){
-    width: 8%;
+    width: 11%;
 }
 .sportAndReading-wrap .title li:nth-child(3),.sportAndReading-wrap .data .item li:nth-child(3){
+    width: 8%;
+}
+.sportAndReading-wrap .title li:nth-child(4),.sportAndReading-wrap .data .item li:nth-child(4){
     width: 15%;
     padding: 0 10px;
     box-sizing: border-box;
 }
-.sportAndReading-wrap .title li:nth-child(4),.sportAndReading-wrap .data .item li:nth-child(4){
-    width: 58%;
+.sportAndReading-wrap .title li:nth-child(5),.sportAndReading-wrap .data .item li:nth-child(5){
+    width: 52%;
     padding: 0 15px;
     box-sizing: border-box;
 }
-.sportAndReading-wrap .title li:nth-child(5),.sportAndReading-wrap .data .item li:nth-child(5){
+.sportAndReading-wrap .title li:nth-child(6),.sportAndReading-wrap .data .item li:nth-child(6){
     width: 8%;
 }
 
