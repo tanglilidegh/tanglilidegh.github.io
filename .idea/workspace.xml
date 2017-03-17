@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f83995cc-8b0f-4ce5-a019-f0b4fe9e1fee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/more.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/reason.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/rule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geekSalon/webkit-playsinline.html" afterPath="$PROJECT_DIR$/geekSalon/webkit-playsinline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index.html" afterPath="$PROJECT_DIR$/sportAndReading/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/more.html" afterPath="$PROJECT_DIR$/sportAndReading/more.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/reason.html" afterPath="$PROJECT_DIR$/sportAndReading/reason.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/rule.html" afterPath="$PROJECT_DIR$/sportAndReading/rule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/show.html" afterPath="$PROJECT_DIR$/sportAndReading/show.html" />
     </list>
     <ignored path="tanglilidegh.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +54,7 @@
             <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="352">
-                  <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="61" />
+                  <caret line="13" column="47" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -67,7 +64,7 @@
             <entry file="file://$PROJECT_DIR$/sportAndReading/more.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="423">
-                  <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="46" />
+                  <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -79,7 +76,7 @@
             <entry file="file://$PROJECT_DIR$/sportAndReading/reason.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="448">
-                  <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+                  <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -91,7 +88,7 @@
             <entry file="file://$PROJECT_DIR$/sportAndReading/rule.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="448">
-                  <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+                  <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -102,8 +99,8 @@
           <file leaf-file-name="show.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sportAndReading/show.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="455">
-                  <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+                <state relative-caret-position="384">
+                  <caret line="11" column="40" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -117,7 +114,7 @@
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="313">
-                  <caret line="509" column="13" selection-start-line="509" selection-start-column="13" selection-end-line="509" selection-end-column="13" />
+                  <caret line="509" column="31" selection-start-line="509" selection-start-column="31" selection-end-line="509" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -159,12 +156,12 @@
         <option value="$PROJECT_DIR$/journal.html" />
         <option value="$PROJECT_DIR$/geekSalon/webkit-playsinline.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/sportAndReading/index.html" />
         <option value="$PROJECT_DIR$/sportAndReading/more.html" />
         <option value="$PROJECT_DIR$/sportAndReading/reason.html" />
         <option value="$PROJECT_DIR$/sportAndReading/rule.html" />
         <option value="$PROJECT_DIR$/sportAndReading/show.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -401,12 +398,12 @@
       <workItem from="1467016006822" duration="181000" />
       <workItem from="1470192843470" duration="4582000" />
       <workItem from="1479091432589" duration="2399000" />
-      <workItem from="1489724486290" duration="13740000" />
+      <workItem from="1489724486290" duration="14232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32735000" />
+    <option name="totallyTimeSpent" value="33227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="79" y="27" width="1920" height="1053" extended-state="0" />
@@ -805,18 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="509" column="13" selection-start-line="509" selection-start-column="13" selection-end-line="509" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="61" />
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -824,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/sportAndReading/more.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="46" />
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -834,7 +823,7 @@
     <entry file="file://$PROJECT_DIR$/sportAndReading/reason.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -844,7 +833,7 @@
     <entry file="file://$PROJECT_DIR$/sportAndReading/rule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -853,8 +842,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sportAndReading/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="384">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="509" column="31" selection-start-line="509" selection-start-column="31" selection-end-line="509" selection-end-column="31" />
           <folding />
         </state>
       </provider>
