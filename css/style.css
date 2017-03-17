@@ -199,7 +199,14 @@ body {
     width: 950px;
     margin: 0 auto;
 }
-
+.share_item .theme_img{
+    width: 240px;
+    height: 150px;
+}
+.share_item .theme_img img{
+    width: 100%;
+    height: 100%;
+}
 .share_item:last-child {
     border-bottom: none;
 }
@@ -242,7 +249,6 @@ body {
 }
 .right p{
     line-height: 22px;
-    text-indent: 2em;
 }
 .share_item_center p{
     line-height: 26px;
@@ -455,4 +461,165 @@ footer {
 .pic img{
     width: 380px;
     height: auto;
+}
+.sportAndReading-head{
+    position: relative;
+}
+.sportAndReading-nav {
+    width: 1000px;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    margin-left: -500px;
+    font-size: 0;
+    /*margin: 0;*/
+    padding: 0;
+}
+.sportAndReading-nav .active{
+    color: #274120;
+    background: rgba(255,255,255,1);
+}
+.more-wrap{
+    background: rgba(255,255,255,.6);
+}
+.more-wrap h1{
+    color: #4f4f4f;
+    font-size: 20px;
+    line-height: 3;
+}
+.red{
+    color: #8e1717 !important;
+}
+.line{
+    width: 100%;
+    height: 20px;
+    background: #d2eae9;
+
+}
+.pd20{
+    padding: 30px 0;
+}
+.more-wrap p{
+    padding: 0 35px;
+    line-height: 2;
+    color: #727272;
+}
+.sportAndReading-nav li{
+    font-size: 14px;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.show-img img{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    display: inline-block;
+}
+.sportAndReading-nav li a{
+    display: inline-block;
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(255,255,255,.26);
+    text-shadow: #007777;
+
+}
+.sportAndReading-wrap{
+    font-size: 12px;
+    font-weight: normal;
+}
+.sportAndReading-wrap .title{
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #fff;
+    background: #00b7b7;
+    border-bottom: 2px solid #007777;
+}
+.sportAndReading-wrap .title li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+.sportAndReading-wrap .title li:nth-child(1),.sportAndReading-wrap .data .item li:nth-child(1){
+    width: 11%;
+}
+.sportAndReading-wrap .title li:nth-child(2),.sportAndReading-wrap .data .item li:nth-child(2){
+    width: 8%;
+}
+.sportAndReading-wrap .title li:nth-child(3),.sportAndReading-wrap .data .item li:nth-child(3){
+    width: 15%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.sportAndReading-wrap .title li:nth-child(4),.sportAndReading-wrap .data .item li:nth-child(4){
+    width: 58%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.sportAndReading-wrap .title li:nth-child(5),.sportAndReading-wrap .data .item li:nth-child(5){
+    width: 8%;
+}
+
+.sportAndReading-wrap .data{
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+.sportAndReading-wrap .data .item{
+    /*min-height: 100px;*/
+}
+.sportAndReading-wrap .data .item li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.feelings{
+    font-size: 12px;
+    font-weight: normal;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.item .avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.data > li:nth-child(odd){
+    background: #f4f4f4;
+}
+.data > li{
+    /*min-height: 100px;*/
+    padding: 10px 0;
+    background: #fff;
+}
+.item h3{
+    font-size: 14px;
+    font-weight: normal;
+}
+.done-img img{
+    width: 30px;
+    height: 30px;
 }
