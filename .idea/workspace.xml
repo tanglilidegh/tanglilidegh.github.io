@@ -2,137 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f83995cc-8b0f-4ce5-a019-f0b4fe9e1fee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrowl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrowr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/unslider.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/technicalArticle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/works.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG205.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG205.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG206.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG206.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG207.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG207.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG209.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG209.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG210.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG210.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG211.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG211.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG212.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG212.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG23.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG23.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG25-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG25-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG25.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG25.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG26-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG26-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG26.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG26.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG27-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG27-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG27.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG27.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG28-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG28-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG28.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG28.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG29-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG29-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG29.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG29.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG30-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG30-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG30.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG30.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG31-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG31-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG31.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG31.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG32-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG32-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG32.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG32.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG33-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG33-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG33.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG33.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG34-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG34-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG34.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG34.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG35.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG35.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG356.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG356.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG36-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG36-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG36.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG36.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG37-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG37-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG37.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG37.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG38-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG38-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG38.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG38.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG39-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG39-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG39.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG39.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG40-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG40-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG40.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG40.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG41-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG41-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG41.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG41.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG42-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG42-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG43.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG43.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG44-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG44-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG44.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG44.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG45-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG45-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG45.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG45.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG46-avatar.jpg" afterPath="$PROJECT_DIR$/images/WechatIMG46-avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/WechatIMG46.jpeg" afterPath="$PROJECT_DIR$/images/WechatIMG46.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/arrow.png" afterPath="$PROJECT_DIR$/images/arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner2.png" afterPath="$PROJECT_DIR$/images/banner2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner_01.jpg" afterPath="$PROJECT_DIR$/images/banner_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner_02.jpg" afterPath="$PROJECT_DIR$/images/banner_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner_1.jpg" afterPath="$PROJECT_DIR$/images/banner_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner_2.jpg" afterPath="$PROJECT_DIR$/images/banner_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner_3.jpg" afterPath="$PROJECT_DIR$/images/banner_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/banner_bg.jpg" afterPath="$PROJECT_DIR$/images/banner_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/contact_bg.jpg" afterPath="$PROJECT_DIR$/images/contact_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/erweima.jpg" afterPath="$PROJECT_DIR$/images/erweima.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fair01.jpg" afterPath="$PROJECT_DIR$/images/fair01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fair02.jpg" afterPath="$PROJECT_DIR$/images/fair02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fair03.jpg" afterPath="$PROJECT_DIR$/images/fair03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/fair04.jpg" afterPath="$PROJECT_DIR$/images/fair04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/icon1.jpg" afterPath="$PROJECT_DIR$/images/icon1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/icon_sain.jpg" afterPath="$PROJECT_DIR$/images/icon_sain.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/me.jpg" afterPath="$PROJECT_DIR$/images/me.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_1.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_10.png" afterPath="$PROJECT_DIR$/images/mobile_debugging_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_11.png" afterPath="$PROJECT_DIR$/images/mobile_debugging_11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_2.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_3.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_4.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_5.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_6.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_7.jpg" afterPath="$PROJECT_DIR$/images/mobile_debugging_7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_8.png" afterPath="$PROJECT_DIR$/images/mobile_debugging_8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mobile_debugging_9.png" afterPath="$PROJECT_DIR$/images/mobile_debugging_9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p1.jpg" afterPath="$PROJECT_DIR$/images/p1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p10.jpg" afterPath="$PROJECT_DIR$/images/p10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p11.jpg" afterPath="$PROJECT_DIR$/images/p11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p12.jpg" afterPath="$PROJECT_DIR$/images/p12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p2.jpg" afterPath="$PROJECT_DIR$/images/p2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p3.jpg" afterPath="$PROJECT_DIR$/images/p3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p4.jpg" afterPath="$PROJECT_DIR$/images/p4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p5.jpg" afterPath="$PROJECT_DIR$/images/p5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p6.jpg" afterPath="$PROJECT_DIR$/images/p6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p7.jpg" afterPath="$PROJECT_DIR$/images/p7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p8.jpg" afterPath="$PROJECT_DIR$/images/p8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/p9.jpg" afterPath="$PROJECT_DIR$/images/p9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p1.jpg" afterPath="$PROJECT_DIR$/images/share_p1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p10.jpg" afterPath="$PROJECT_DIR$/images/share_p10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p11.jpg" afterPath="$PROJECT_DIR$/images/share_p11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p12.jpg" afterPath="$PROJECT_DIR$/images/share_p12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p2.jpg" afterPath="$PROJECT_DIR$/images/share_p2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p3.jpg" afterPath="$PROJECT_DIR$/images/share_p3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p4.jpg" afterPath="$PROJECT_DIR$/images/share_p4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p5.jpg" afterPath="$PROJECT_DIR$/images/share_p5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p6.jpg" afterPath="$PROJECT_DIR$/images/share_p6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p7.jpg" afterPath="$PROJECT_DIR$/images/share_p7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p8.jpg" afterPath="$PROJECT_DIR$/images/share_p8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/share_p9.jpg" afterPath="$PROJECT_DIR$/images/share_p9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sina_icon.png" afterPath="$PROJECT_DIR$/images/sina_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/small_p1.jpg" afterPath="$PROJECT_DIR$/images/small_p1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sportAndreading.jpg" afterPath="$PROJECT_DIR$/images/sportAndreading.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/telphoen.jpg" afterPath="$PROJECT_DIR$/images/telphoen.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/tllavatar.jpeg" afterPath="$PROJECT_DIR$/images/tllavatar.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/undone.png" afterPath="$PROJECT_DIR$/images/undone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/webkit-playsinline_1.png" afterPath="$PROJECT_DIR$/images/webkit-playsinline_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/webkit-playsinline_2.png" afterPath="$PROJECT_DIR$/images/webkit-playsinline_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/index20170317.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all-work.html" afterPath="$PROJECT_DIR$/all-work.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery.html" afterPath="$PROJECT_DIR$/gallery.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geeksalon.html" afterPath="$PROJECT_DIR$/geeksalon.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/journal.html" afterPath="$PROJECT_DIR$/journal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index.html" afterPath="$PROJECT_DIR$/sportAndReading/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/more.html" afterPath="$PROJECT_DIR$/sportAndReading/more.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/reason.html" afterPath="$PROJECT_DIR$/sportAndReading/reason.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/rule.html" afterPath="$PROJECT_DIR$/sportAndReading/rule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/show.html" afterPath="$PROJECT_DIR$/sportAndReading/show.html" />
     </list>
     <ignored path="tanglilidegh.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="97" column="81" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="81" />
+            <state relative-caret-position="364">
+              <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -164,9 +48,6 @@
                 <element signature="n#ul#0;n#div#1;n#section#0;n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#1;n#div#1;n#section#0;n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#2;n#div#1;n#section#0;n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#article#4;n#section#0;n#article#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#article#5;n#section#0;n#article#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#article#6;n#section#0;n#article#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#article#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#article#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -174,87 +55,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="journal.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/journal.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="342">
+              <caret line="633" column="17" selection-start-line="633" selection-start-column="17" selection-end-line="633" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about.html">
+      <file leaf-file-name="index20170317.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportAndReading/index20170317.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
+            <state relative-caret-position="331">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all-work.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/all-work.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="102" column="81" selection-start-line="102" selection-start-column="81" selection-end-line="102" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gallery.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geeksalon.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/geeksalon.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="95" column="81" selection-start-line="95" selection-start-column="81" selection-end-line="95" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="200" column="34" selection-start-line="200" selection-start-column="34" selection-end-line="200" selection-end-column="34" />
-              <folding>
-                <element signature="n#li#0;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#li#0;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#8;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#9;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#10;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -275,17 +91,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bnner2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/bnner2.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="more.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportAndReading/more.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banner1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/banner1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="n#li#8;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#9;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#10;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#11;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#12;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#15;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#16;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#17;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#18;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#19;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#20;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#21;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#22;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reason.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportAndReading/reason.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportAndReading/rule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sportAndReading/show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -315,20 +187,22 @@
         <option value="$PROJECT_DIR$/geekSalon/mobileDebugging.html" />
         <option value="$PROJECT_DIR$/css/lrtk.css" />
         <option value="$PROJECT_DIR$/geekSalon/webkit-playsinline.html" />
-        <option value="$PROJECT_DIR$/sportAndReading/more.html" />
-        <option value="$PROJECT_DIR$/sportAndReading/reason.html" />
-        <option value="$PROJECT_DIR$/sportAndReading/show.html" />
-        <option value="$PROJECT_DIR$/sportAndReading/rule.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/works.html" />
-        <option value="$PROJECT_DIR$/sportAndReading/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/journal.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/all-work.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/gallery.html" />
         <option value="$PROJECT_DIR$/geeksalon.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/temp.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/index.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/more.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/reason.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/rule.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/show.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sportAndReading/index20170317.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -340,7 +214,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1298" />
+    <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -439,6 +313,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="geekSalon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tanglilidegh.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tanglilidegh.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fancybox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tanglilidegh.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tanglilidegh.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -456,6 +358,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sportAndReading" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
@@ -543,13 +446,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45748000" />
+    <option name="totallyTimeSpent" value="47657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1298" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1981206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15503876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0020811656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -583,14 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Work/H5zhibo/webIM直播/playback.html" />
-    <entry file="file://$PROJECT_DIR$/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -686,53 +581,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/more.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/reason.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/rule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/WechatIMG205.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="540" column="16" selection-start-line="540" selection-start-column="16" selection-end-line="540" selection-end-column="16" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/works.html">
@@ -837,14 +688,115 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170317.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="71" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geeksalon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="300" column="46" selection-start-line="300" selection-start-column="46" selection-end-line="300" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-work.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1014">
+          <caret line="102" column="81" selection-start-line="102" selection-start-column="81" selection-end-line="102" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/reason.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="200" column="34" selection-start-line="200" selection-start-column="34" selection-end-line="200" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="n#li#0;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#0;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#8;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#9;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#10;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -866,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="97" column="81" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="81" />
+        <state relative-caret-position="364">
+          <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -875,72 +827,41 @@
             <element signature="n#ul#0;n#div#1;n#section#0;n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#1;n#div#1;n#section#0;n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#2;n#div#1;n#section#0;n#article#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#4;n#section#0;n#article#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#5;n#section#0;n#article#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#6;n#section#0;n#article#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#article#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#article#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal.html">
+    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170317.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
+        <state relative-caret-position="331">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#8;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#9;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#10;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#11;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#12;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#15;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#16;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#17;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#18;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#19;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#20;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#21;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#22;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/all-work.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="102" column="81" selection-start-line="102" selection-start-column="81" selection-end-line="102" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="93" column="81" selection-start-line="93" selection-start-column="81" selection-end-line="93" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geeksalon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="95" column="81" selection-start-line="95" selection-start-column="81" selection-end-line="95" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="633" column="17" selection-start-line="633" selection-start-column="17" selection-end-line="633" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

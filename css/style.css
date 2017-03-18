@@ -629,3 +629,13 @@ footer {
     width: 30px;
     height: 30px;
 }
+.past{
+    color: #00b7b7;
+    font-size: 16px;
+    line-height: 2.7;
+
+}
+.past a{
+    color: #00b7b7;
+    text-decoration: underline;
+}
