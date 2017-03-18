@@ -7,11 +7,81 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico"/>
     <title>Sunshine——个人网站</title>
     <script type="text/javascript" src="js/underscore-min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/unslider.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        html, body {
+            font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+        }
+
+        ul, ol {
+            padding: 0;
+        }
+
+        .banner {
+            position: relative;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .banner li {
+            list-style: none;
+        }
+
+        .banner ul li {
+            float: left;
+        }
+
+        #b04 {
+            width: 100%;
+        }
+
+        #b04 .dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+        }
+
+        #b04 .dots li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+            text-indent: -999em;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: .4;
+            -webkit-transition: background .5s, opacity .5s;
+            -moz-transition: background .5s, opacity .5s;
+            transition: background .5s, opacity .5s;
+        }
+
+        #b04 .dots li.active {
+            background: #fff;
+            opacity: 1;
+        }
+        #b04 .arrow {
+            position: absolute;
+            top: 130px;
+        }
+
+        #b04 #al {
+            left: 100px;
+        }
+
+        #b04 #ar {
+            right: 100px;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -39,11 +109,24 @@
     </header>
     <!--header end-->
     <!--=================-->
-    <article id="banner" class="w100">
-        <div class="w1000">
-            <a href="all-work.html"><img src="images/banner2.png" /></a>
-        </div>
-    </article>
+    <!--<article id="banner" class="w100">-->
+    <!--<div class="w1000">-->
+    <!--<a href="all-work.html"><img src="images/banner2.png" /></a>-->
+    <!--</div>-->
+    <!--</article>-->
+
+    <div class="banner" id="b04">
+        <ul>
+            <li><a href="all-work.html"><img src="images/banner1.jpg" alt="" width="100%" height="300"></a></li>
+            <li><a href="sportAndReading/index.html"><img src="images/sportAndreading.jpg" alt="" width="1000" height="300"></a></li>
+            <li><img src="images/bnner2.jpg" alt="" width="1000" height="300"></li>
+            <li><img src="images/banner3.jpg" alt="" width="1000" height="300"></li>
+        </ul>
+        <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="images/arrowl.png" alt="prev" width="20" height="35"></a>
+        <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="images/arrowr.png" alt="next" width="20" height="37"></a>
+    </div>
+
+
     <!--banner end-->
     <!--=================-->
 
@@ -106,7 +189,9 @@
                     <h3><a href="geekSalon/videojs-HTML5.html">用video.js开发HTML5播放视频</a></h3>
                     <img src="images/banner_02.jpg" alt="这里放图片的解释文字">
 
-                    <p>最近公司有一个新的需要,通过微信分享,在微信或手机浏览器中打开视频,这个视频有分直播和录播/回放,如果是直播,采用的是腾讯云上路演的js-SDK,而录播/回放我自己采用的是video.js这个插件,video.js在目前同类插件中热门排行第一,相关文档也比较齐全,并且大部分能兼容IOS和Android手机的浏览器。<a href="geekSalon/videojs-HTML5.html" class="more">阅读全文&gt;&gt;</a>
+                    <p>
+                        最近公司有一个新的需要,通过微信分享,在微信或手机浏览器中打开视频,这个视频有分直播和录播/回放,如果是直播,采用的是腾讯云上路演的js-SDK,而录播/回放我自己采用的是video.js这个插件,video.js在目前同类插件中热门排行第一,相关文档也比较齐全,并且大部分能兼容IOS和Android手机的浏览器。<a
+                            href="geekSalon/videojs-HTML5.html" class="more">阅读全文&gt;&gt;</a>
                     </p>
 
                     <div class="share_button">
@@ -122,7 +207,8 @@
                     <h3><a href="geekSalon/mobileDebugging.html">移动端前端开发真机调试攻略</a></h3>
                     <img src="images/banner_01.jpg" alt="这里放图片的解释文字">
 
-                    <p>最近一直在做用HTML5开发移动端页面,有些效果只有在真实的手机上测试才好调试,所以今天就在网上查了一下相关的调试方法,终于让我找到了一些特别好的方式。 下面是在网上找到的内容,根据现在的情况我自己做了一下整理。
+                    <p>最近一直在做用HTML5开发移动端页面,有些效果只有在真实的手机上测试才好调试,所以今天就在网上查了一下相关的调试方法,终于让我找到了一些特别好的方式。
+                        下面是在网上找到的内容,根据现在的情况我自己做了一下整理。
                         <a href="geekSalon/mobileDebugging.html" class="more">阅读全文&gt;&gt;</a>
                     </p>
                     <div class="share_button">
@@ -163,7 +249,9 @@
                     <div class="right">
                         <h3><a href="geekSalon/webkit-playsinline.html">关于如何禁止 iPhone Safari 视频自动全屏？</a></h3>
 
-                        <p>如果在工作中有遇到过用HTML5开发视频播放的需求,估计有同学会知道webkit-playsinline这个属性。微信支持这个属性，但是safari 10以下的版本是不支持的，而2016.6.16更新了IOS10,原生的支持了。 不过我打开自己的iphone 6+,翻了好久,一直没有找到在哪里看版本。safari 10以下的版本播放视频只能全屏，所以这个问题是没有答案的。
+                        <p>如果在工作中有遇到过用HTML5开发视频播放的需求,估计有同学会知道webkit-playsinline这个属性。微信支持这个属性，但是safari
+                            10以下的版本是不支持的，而2016.6.16更新了IOS10,原生的支持了。 不过我打开自己的iphone 6+,翻了好久,一直没有找到在哪里看版本。safari
+                            10以下的版本播放视频只能全屏，所以这个问题是没有答案的。
                             <a href="geekSalon/webkit-playsinline.html" class="more">阅读全文&gt;&gt;</a>
                         </p>
 
@@ -232,7 +320,8 @@
                     <div class="right">
                         <h3><a href="geekSalon/common.html">前端包管理、构建、模块打包等工具的总结</a></h3>
 
-                        <p>前端包管理、构建、模块打包等工具的总结,npm、gulp、grunt、fix、browserify、webpack、bower、yeoman、component、duo等等<a href="geekSalon/common.htm" class="more">阅读全文&gt;&gt;</a>
+                        <p>前端包管理、构建、模块打包等工具的总结,npm、gulp、grunt、fix、browserify、webpack、bower、yeoman、component、duo等等<a
+                                href="geekSalon/common.htm" class="more">阅读全文&gt;&gt;</a>
                         </p>
 
                         <div class="share_button_s">
@@ -284,7 +373,7 @@
 
                     <div class="about_right">
                         <h1>工作是为了更好的生活，所以要努力工作，<br/>学习能成就更好的自己，所以要在生活中不断的学习。
-                            </h1>
+                        </h1>
                         <h5>做正确的事，正确的做事</h5>
 
                         <a href="">欲了解更多，欢迎访问本人简历&gt;&gt;</a>
@@ -395,7 +484,18 @@
     <!--footer end-->
 
     <!--=================-->
-
+    <script>
+        $(document).ready(function (e) {
+            var unslider04 = $('#b04').unslider({
+                        dots: true
+                    }),
+                    data04 = unslider04.data('unslider');
+            $('.unslider-arrow04').click(function () {
+                var fn = this.className.split(' ')[1];
+                data04[fn]();
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
