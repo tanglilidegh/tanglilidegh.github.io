@@ -636,6 +636,8 @@ footer {
 
 }
 .past a{
+    display: inline-block;
+    margin-right: 15px;
     color: #00b7b7;
     text-decoration: underline;
 }
