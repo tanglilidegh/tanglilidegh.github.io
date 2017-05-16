@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/mint-ui-style.css">
+</head>
+<body>
+<div id="app1">
+    {{ message }}
+    <span>{{ content.plank_id}}</span>
+    <span>{{ content.start_at}}</span>
+    <span>{{ content.status}}</span>
+    <span>{{ content.members_num}}</span>
+    <div class="test-wrap">
+        <ul>
+            <li v-for="item in members">{{ item.id }} | {{ item.name }} |  {{ item.status }}</li>
+        </ul>
+    </div>
+</div>
+<script src="./js/vue.min.js"></script>
+<script src="./js/vue-router.js"></script>
+<script src="./js/vue-resource.min.js"></script>
+<script src="./js/mint-ui.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app1',
+        data: {
+            message: 'Hello Vue!',
+            content: [],
+            members: []
+        },
+        mounted(){
+            let dataUrl = "js/test1.json";
+            this.$http.get(dataUrl)
+                    .then(({data:{code, content, jssdk, msg}}) => {
+                        if (code === 0) {
+                            this.content = content;
+                            this.members = content.members;
+                            //window.MINT.MessageBox('提示', msg);
+                        } else {
+                            window.MINT.MessageBox('提示', msg);
+                        }
+                    }, ({data:{msg}}) => {
+                        window.MINT.MessageBox('提示', msg);
+                    });
+        }
+    })
+</script>
+</body>
+</html>

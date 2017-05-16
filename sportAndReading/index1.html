@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运动+阅读计划 今日数据</title>
+    <link rel="stylesheet" href="./../css/mint-ui-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .nav{ height:30px;}
+        .nav li{ display:inline-block; width:100px; height:30px;line-height:30px; float:left; cursor:pointer; text-align:center;background:#ddd;}
+        .nav li.cur{color:#fff;background:#f60}
+        .con{ display:none; padding-top:10px;}
+    </style>
+</head>
+<body>
+<div id="app2">
+    <article class="w100 sportAndReading-head">
+        <div class="w1000 head-banner">
+            <a href="index20170317.html"><img src="../images/sportAndreading.jpg"/></a>
+        </div>
+        <ul class="w1000 sportAndReading-nav">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="index.html" class="active">数据展示</a></li>
+            <li><a href="reason.html">话动由来</a></li>
+            <li><a href="rule.html">活动规则</a></li>
+            <li><a href="show.html">照片展示</a></li>
+            <li><a href="more.html">后期安排</a></li>
+        </ul>
+    </article>
+    <p class="past">往期回顾：
+        <!--<a v-on:click="stopEventCheer(item.group_id, $event, item.id)"></a>-->
+        <a v-for="dateTime in reviews" href="javascript:void (0);" v-on:click="getReviewDateData(dateTime.dateText, event)">{{ dateTime.dateText }}</a>
+    </p>
+    <div class="sportAndReading-wrap w1000">
+        <ul class="title">
+            <li>名次</li>
+            <li>姓名</li>
+            <li>头像</li>
+            <li>运动</li>
+            <li>阅读</li>
+            <li>总完成度</li>
+        </ul>
+        <ul class="data">
+            <li v-for="(item, index) in review.resultData">
+                <ul class="item">
+                    <li>{{ index + 1 }}</li>
+                    <li>{{ item.name }}</li>
+                    <li class="avatar"><img :src="item.avatar" :alt="item.name"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：{{ item.sportsItems }}</p>
+                        <p>完成度: <strong>{{ item.sportReview }}</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <h3>{{ item.readingItems }}</h3>
+                        <p class="feelings text-left"><strong>读后感：</strong>{{ item.shortIntroduce }}
+                        </p>
+                        <p>完成度: <strong>{{ item.readingReview }}</strong></p>
+                    </li>
+                    <li>
+                        <strong>{{ item.total }}</strong>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<!--
+    <div class="sportAndReading-wrap w1000">
+        <ul class="title">
+            <li>名次</li>
+            <li>姓名</li>
+            <li>头像</li>
+            <li>运动</li>
+            <li>阅读</li>
+            <li>总完成度</li>
+        </ul>
+        <ul class="data">
+            <li>
+                <ul class="item">
+                    <li>1</li>
+                    <li>马莲</li>
+                    <li class="avatar"><img src="../images/WechatIMG31-avatar.jpg" alt="马莲"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：Keep</p>
+                        <p>完成度: <strong>100%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <h3>书名《狼图腾》，289～298页，</h3>
+                        <p class="feelings text-left"><strong>读后感：</strong>为了抵御蚊灾，毕力格老人和乌力吉决定将马群赶到那片沙地草场，但是夜里忽然电闪雷鸣，狼群利用这天赐战机有组织，有战略的冲散马群，咬死咬伤多匹马驹和老马病马，大雨停后大群蚊子迅速涌入这血腥的战场，而这却又偏偏是一个无风的夜晚，没有风力驱赶蚊虫，马群被叮咬的继续日出奔逃。毕力格老人早已料到这夜狼群会大突袭，提前派场部的羊倌牛倌过来支援，才在马群跑过边防公路之前将马群拦截，否则马群可能会全部损失。而从农区过来的场部主任包顺贵却将这场雷灾，风灾，狼灾，蚊灾全部归咎于狼，一味要求将草原狼全部消灭，而不考虑草原的动态平衡，忽略了草原狼，草原民族，蒙古马之间的关系，更无视千百年来草原民族狼图腾的信仰，毕力格老人和草原牧人脸色阴沉，全部无声的收拾起被狼咬伤的马驹尸体。
+                        </p>
+                        <p>完成度: <strong>100%</strong></p>
+                    </li>
+                    <li>
+                        <strong>100%</strong>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="item">
+                    <li>2</li>
+                    <li>汤利利</li>
+                    <li class="avatar"><img src="../images/tllavatar.jpeg" alt="汤利利"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：骑行18分钟+步行7684步</p>
+                        <p>完成度: <strong>100%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <h3>书名《汽车驾驶全程图解》，从14页到25页</h3>
+
+                        <p class="feelings text-left"><strong>读后感：</strong>，主要讲不同道路情况下应做哪些安全反应，以前没看这个书的时候不觉得有什么，今天看了，虽不上技术提高了多少，到安全意识提高了，知道哪些情况下至少应该先减速，这样自己也放心多了。
+                        </p>
+                        <p>完成度: <strong>100%</strong></p>
+                    </li>
+                    <li>
+                        <strong>100%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li>3</li>
+                    <li>刘俊红</li>
+                    <li class="avatar"><img src="../images/WechatIMG46-avatar.jpg" alt="刘俊红"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：步行10900步</p>
+                        <p>完成度: <strong>90.8%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <h3>书名《别以为你会开车》，40~68</h3>
+                        <p class="feelings"><strong>读后感：</strong></p>
+                        <p>完成度: <strong>100%</strong></p>
+                    </li>
+                    <li>
+                        <strong>95.4%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li>4</li>
+                    <li>吴细红</li>
+                    <li class="avatar"><img src="../images/WechatIMG34-avatar.jpg" alt="吴细红"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：步行9199</p>
+                        <p>完成度: <strong>78.11%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <h3>书名《追风筝的人》，从138页到168页</h3>
+                        <p>完成度: <strong>100%</strong></p>
+                    </li>
+                    <li>
+                        <strong>89.05%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li>5</li>
+                    <li>小李子</li>
+                    <li class="avatar"><img src="../images/WechatIMG42-avatar.jpg" alt="小李子"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：步行10190</p>
+                        <p>完成度: <strong>84.9%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《重返狼群》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>42.45%</strong>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="item">
+                    <li>6</li>
+                    <li>简简单单</li>
+                    <li class="avatar"><img src="../images/WechatIMG25-avatar.jpg" alt="简简单单"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：9848步</p>
+                        <p>完成度: <strong>82.06%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>41.03%</strong>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="item">
+                    <li>7</li>
+                    <li>李志英</li>
+                    <li class="avatar"><img src="../images/WechatIMG32-avatar.jpg" alt="李志英"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li>8</li>
+                    <li>罗志强</li>
+                    <li class="avatar"><img src="../images/WechatIMG26-avatar.jpg" alt="罗志强"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p>运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <ul class="item">
+                    <li>9</li>
+                    <li>黄小红</li>
+                    <li class="avatar"><img src="../images/WechatIMG45-avatar.jpg" alt="黄小红"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/right.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="item">
+                    <li>10</li>
+                    <li>鲜学良</li>
+                    <li class="avatar"><img src="../images/WechatIMG37-avatar.jpg" alt="鲜学良"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <ul class="item">
+                    <li>11</li>
+                    <li>王彦鹏</li>
+                    <li class="avatar"><img src="../images/WechatIMG27-avatar.jpg" alt="王彦鹏"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：羽毛球</p>
+                        <p class="feelings text-center">业余羽毛球爱好者。</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <h3>书名《超级羽毛球技术》，从70页到72页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li>12</li>
+                    <li>刘招英</li>
+                    <li class="avatar"><img src="../images/WechatIMG28-avatar.jpg" alt="刘招英"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：步</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170320</h3>
+                        <h3>书名《在绝望中寻找希望》，作者：俞敏洪，</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <ul class="item">
+                    <li>13</li>
+                    <li>娟儿</li>
+                    <li class="avatar"><img src="../images/WechatIMG40-avatar.jpg" alt="娟儿"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>李明0921</li>
+                    <li class="avatar"><img src="../images/WechatIMG44-avatar.jpg" alt="李明0921"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>小武</li>
+                    <li class="avatar"><img src="../images/WechatIMG43.jpeg" alt="小武"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>ABCaoe123</li>
+                    <li class="avatar"><img src="../images/WechatIMG41-avatar.jpg" alt="ABCaoe123"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>曾丽君</li>
+                    <li class="avatar"><img src="../images/WechatIMG39-avatar.jpg" alt="曾丽君"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>耳东</li>
+                    <li class="avatar"><img src="../images/WechatIMG38-avatar.jpg" alt="耳东"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>韩松均</li>
+                    <li class="avatar"><img src="../images/WechatIMG36-avatar.jpg" alt="韩松均"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>项德飞</li>
+                    <li class="avatar"><img src="../images/WechatIMG35.jpeg" alt="项德飞"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>罗冬莲</li>
+                    <li class="avatar"><img src="../images/WechatIMG33-avatar.jpg" alt="罗冬莲"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>盼盼</li>
+                    <li class="avatar"><img src="../images/WechatIMG30-avatar.jpg" alt="盼盼"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="item">
+                    <li></li>
+                    <li>支阔</li>
+                    <li class="avatar"><img src="../images/WechatIMG29-avatar.jpg" alt="支阔"></li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <p class="feelings text-center">运动项目：</p>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <div class="done-img"><img src="../images/undone.png" alt=""></div>
+                        <h3>两周读书+运动计划，20170317</h3>
+                        <h3>书名《》，从0页到10页</h3>
+                        <p>完成度: <strong>0%</strong></p>
+                    </li>
+                    <li>
+                        <strong>0%</strong>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+    -->
+
+    <div class="box">
+        <div class="nav" id="tab">
+            <ul>
+                <li class="cur">菜单一 </li>
+                <li>菜单二 </li>
+                <li>菜单三 </li>
+                <li>菜单四 </li>
+            </ul>
+        </div>
+        <div id="con">
+            <div class="con" style="display:block">
+                <ul>
+                    <li>11111111111111111111</li>
+                    <li>11111111111111111111</li>
+                    <li>11111111111111111111</li>
+                    <li>11111111111111111111</li>
+                    <li>11111111111111111111</li>
+                </ul>
+            </div>
+            <div class="con">
+                <ul>
+                    <li>222222222222222222222</li>
+                    <li>222222222222222222222</li>
+                    <li>222222222222222222222</li>
+                    <li>222222222222222222222</li>
+                    <li>222222222222222222222</li>
+                </ul>
+            </div>
+            <div class="con">
+                <ul>
+                    <li>333333333333333333</li>
+                    <li>333333333333333333</li>
+                    <li>333333333333333333</li>
+                    <li>333333333333333333</li>
+                    <li>333333333333333333</li>
+                </ul>
+            </div>
+            <div class="con">
+                <ul>
+                    <li>44444444444444444444</li>
+                    <li>44444444444444444444</li>
+                    <li>222222222222222222222</li>
+                    <li>222222222222222222222</li>
+                    <li>222222222222222222222</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./../js/vue.min.js"></script>
+<script src="./../js/vue-resource.min.js"></script>
+<script src="./../js/mint-ui.js"></script>
+<script src="./../js/lodash.js"></script>
+<script>
+    window.onload=function(){
+        var nav=document.getElementById("tab").getElementsByTagName("li");
+        var con=document.getElementById("con").getElementsByTagName("div");
+        for(i=0;i<nav.length;i++){
+            nav[i].index = i;
+            nav[i].onmouseover=function(){
+                for(var n = 0; n < con.length; n++) {
+                    con[n].style.display = "none";
+                    nav[n].className = "";
+                }
+                con[this.index].style.display = "block"
+                nav[this.index].className = "cur";
+            }
+
+        }
+    }
+    var app = new Vue({
+        el: '#app2',
+        data: {
+            content: [],
+            members: [],
+            reviews:[],
+            review:''
+        },
+        mounted(){
+            let dataUrl = "../js/test1.json";
+            this.$http.get(dataUrl)
+                    .then(({data:{code, content, jssdk, msg}}) => {
+                        if (code === 0) {
+                            this.content = content;
+                            this.members = content.members;
+                            this.reviews = content.reviews;
+//                            this.review = this.reviews[1];
+//                            console.log(JSON.stringify(this.reviews));
+                            //window.MINT.MessageBox('提示', msg);
+                        } else {
+                            window.MINT.MessageBox('提示', msg);
+                        }
+                    }, ({data:{msg}}) => {
+                        window.MINT.MessageBox('提示', msg);
+                    });
+        },
+        methods: {
+            stopEventCheer(group_id, event, cheer_id){
+                let queryData = {
+                    my_group_id: this.$route.params.id,
+                    cheer_id: cheer_id
+                };
+//                if (group_id != "0" || this.identity != 1) {
+//                    event.preventDefault();
+//                    event.stopPropagation();
+//                } else {
+//                    this.$router.push({path: '/coach/' + this.$route.params.id, query: queryData});
+//                }
+            },
+            getReviewDateData(dateText, event){
+                this.review = this.reviews[0];
+                    event.preventDefault();
+                    event.stopPropagation();
+                _.map(this.reviews, function (item) {
+                    if (item.dateText == dateText) {
+//                        window.MINT.MessageBox('提示', 'true');
+                        this.review = item;
+//                        return item;
+                    }
+//                    if (item.dateText == dateText) {
+//                        window.MINT.MessageBox('提示', 'true');
+////                        return item;
+//                    }
+                });
+            }
+        }
+    })
+</script>
+</body>
+</html>

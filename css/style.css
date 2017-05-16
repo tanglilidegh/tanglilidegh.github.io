@@ -30,7 +30,7 @@ body {
 }
 
 .w1000 {
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 .button_group {
-    width: 585px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -168,7 +168,7 @@ body {
 .works_img {
     font-size: 0;
     margin: 0 auto;
-    width: 860px;
+    width: 100%;
     height: 535px;
     padding-top: 25px;
 
@@ -196,7 +196,7 @@ body {
 .share_new, .share_item {
     border-bottom: 1px dashed #bbb;
     padding: 15px 0;
-    width: 950px;
+    width: 80%;
     margin: 0 auto;
 }
 .share_item .theme_img{
@@ -236,11 +236,11 @@ body {
 
 .right {
     float: right;
-    width: 685px;
+    width: 60%;
 }
 
 .share_item_center {
-    width: 950px;
+    width: 80%;
 }
 
 .share_button ul li, .share_button_s ul li {
@@ -312,7 +312,7 @@ a.more:hover {
 
 .about_right {
     float: right;
-    width: 680px;
+    width: 60%;
 }
 
 .about_right h1 {
@@ -400,7 +400,7 @@ a.more:hover {
 /* contact begin*/
 
 #contact {
-    width: 1000px;
+    width: 80%;
     background: #a1cdc0 url("../images/contact_bg.jpg") center bottom no-repeat;
     color: #fff;
     height: 400px;
@@ -462,15 +462,18 @@ footer {
     width: 380px;
     height: auto;
 }
+
+/* 运动与阅读计划 START */
 .sportAndReading-head{
-    position: relative;
+    /*position: relative;*/
 }
 .sportAndReading-nav {
-    width: 1000px;
-    position: absolute;
-    bottom: 6px;
-    left: 50%;
-    margin-left: -500px;
+    margin-top: -56px;
+    width: 80%;
+    /*position: absolute;*/
+    /*bottom: 6px;*/
+    /*left: 50%;*/
+    /*margin-left: -500px;*/
     font-size: 0;
     /*margin: 0;*/
     padding: 0;
@@ -527,6 +530,9 @@ footer {
     background: rgba(255,255,255,.26);
     text-shadow: #007777;
 
+}
+.head-banner a img {
+    width: 100%;
 }
 .sportAndReading-wrap{
     font-size: 12px;
@@ -630,9 +636,13 @@ footer {
     height: 30px;
 }
 .past{
+    padding: 5px 0;
     color: #00b7b7;
-    font-size: 16px;
-    line-height: 2.7;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
 
 }
 .past a{
