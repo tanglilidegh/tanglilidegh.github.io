@@ -199,6 +199,9 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+.share_new img{
+    width: 100%;
+}
 .share_item .theme_img{
     width: 240px;
     height: 150px;
@@ -236,7 +239,7 @@ body {
 
 .right {
     float: right;
-    width: 60%;
+    width: 77%;
 }
 
 .share_item_center {
@@ -302,7 +305,7 @@ a.more:hover {
 
 .about_title {
     background: #209791;
-    padding: 15px 0 15px 55px;
+    padding: 15px 0 15px 355px;
 }
 
 .about_title img {
@@ -312,7 +315,7 @@ a.more:hover {
 
 .about_right {
     float: right;
-    width: 60%;
+    width: 75%;
 }
 
 .about_right h1 {
@@ -400,7 +403,7 @@ a.more:hover {
 /* contact begin*/
 
 #contact {
-    width: 80%;
+    width: 100%;
     background: #a1cdc0 url("../images/contact_bg.jpg") center bottom no-repeat;
     color: #fff;
     height: 400px;
