@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f83995cc-8b0f-4ce5-a019-f0b4fe9e1fee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sportAndReading/index20170321.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index.html" afterPath="$PROJECT_DIR$/sportAndReading/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index20170317.html" afterPath="$PROJECT_DIR$/sportAndReading/index20170317.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index20170318.html" afterPath="$PROJECT_DIR$/sportAndReading/index20170318.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index20170319.html" afterPath="$PROJECT_DIR$/sportAndReading/index20170319.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportAndReading/index20170320.html" afterPath="$PROJECT_DIR$/sportAndReading/index20170320.html" />
     </list>
     <ignored path="tanglilidegh.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-684">
-              <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
+            <state relative-caret-position="467">
+              <caret line="239" column="20" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
               <folding>
                 <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -52,7 +46,7 @@
       <file leaf-file-name="index20170321.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportAndReading/index20170321.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="780">
               <caret line="30" column="226" selection-start-line="30" selection-start-column="226" selection-end-line="30" selection-end-column="226" />
               <folding>
                 <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -73,7 +67,7 @@
       <file leaf-file-name="index20170320.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportAndReading/index20170320.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="780">
               <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
               <folding>
                 <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -94,7 +88,7 @@
       <file leaf-file-name="index20170317.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportAndReading/index20170317.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
+            <state relative-caret-position="780">
               <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="66" />
               <folding>
                 <element signature="n#li#8;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -119,7 +113,7 @@
       <file leaf-file-name="index20170319.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportAndReading/index20170319.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="780">
               <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
               <folding />
             </state>
@@ -129,7 +123,7 @@
       <file leaf-file-name="index20170318.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sportAndReading/index20170318.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="780">
               <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
               <folding>
                 <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -205,9 +199,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="x" value="-310" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -366,18 +361,19 @@
       <workItem from="1489762164844" duration="534000" />
       <workItem from="1489977398420" duration="395000" />
       <workItem from="1490107478326" duration="732000" />
-      <workItem from="1490109282683" duration="2298000" />
+      <workItem from="1490109282683" duration="3063000" />
+      <workItem from="1494936698550" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54321000" />
+    <option name="totallyTimeSpent" value="55129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="-310" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14728682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11005793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -670,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20448">
           <caret line="639" column="23" selection-start-line="639" selection-start-column="23" selection-end-line="639" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,37 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170319.html">
+    <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170320.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-          <folding>
-            <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#15;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#16;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#17;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#18;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#19;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#20;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#21;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#22;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170318.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        <state relative-caret-position="467">
+          <caret line="239" column="20" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
           <folding>
             <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -729,8 +697,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sportAndReading/index20170321.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="780">
           <caret line="30" column="226" selection-start-line="30" selection-start-column="226" selection-end-line="30" selection-end-column="226" />
+          <folding>
+            <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#15;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#16;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#17;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#18;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#19;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#20;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#21;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#22;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170320.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
           <folding>
             <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -748,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sportAndReading/index20170317.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
+        <state relative-caret-position="780">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="66" />
           <folding>
             <element signature="n#li#8;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -769,10 +756,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sportAndReading/index.html">
+    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170319.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
+        <state relative-caret-position="780">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sportAndReading/index20170318.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
           <folding>
             <element signature="n#li#13;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#14;n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
