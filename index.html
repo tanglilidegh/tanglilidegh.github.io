@@ -1,86 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta content="text/html" charset="utf-8" http-equiv="Content-Type">
     <meta name="keywords" content="UI设计,个人作品,平面设计,网页设计">
     <meta name="description" content="">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico"/>
-    <title>Sunshine——个人网站</title>
-    <script type="text/javascript" src="js/underscore-min.js"></script>
-    <!--<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>-->
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/unslider.min.js"></script>
+    <title>Sunshine 汤利利个人网站</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
-        html, body {
-            font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <style type="text/css">
+        .swiper-container {
+            width: 1000px;
+            height: 300px;
         }
-
-        ul, ol {
-            padding: 0;
-        }
-
-        .banner {
-            position: relative;
-            overflow: auto;
-            text-align: center;
-        }
-
-        .banner li {
-            list-style: none;
-        }
-
-        .banner ul li {
-            float: left;
-        }
-
-        #b04 {
-            /*width: 100%;*/
-        }
-
-        #b04 .dots {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 20px;
-        }
-
-        #b04 .dots li {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin: 0 4px;
-            text-indent: -999em;
-            border: 2px solid #fff;
-            border-radius: 6px;
-            cursor: pointer;
-            opacity: .4;
-            -webkit-transition: background .5s, opacity .5s;
-            -moz-transition: background .5s, opacity .5s;
-            transition: background .5s, opacity .5s;
-        }
-
-        #b04 .dots li.active {
-            background: #fff;
-            opacity: 1;
-        }
-        #b04 .arrow {
-            position: absolute;
-            top: 130px;
-        }
-
-        #b04 #al {
-            left: 100px;
-        }
-
-        #b04 #ar {
-            right: 100px;
-        }
-
     </style>
 </head>
 <body>
@@ -108,24 +44,28 @@
         </nav>
     </header>
     <!--header end-->
-    <!--=================-->
 
-    <div class="banner" id="b04">
-        <ul>
-            <li><a href="all-work.html"><img src="images/banner0.jpg" alt=""></a></li>
-            <li><a href="sportAndReading/index.html"><img src="images/sportAndreading.jpg" alt=""></a></li>
-            <li><img src="images/bnner2.jpg" alt=""></li>
-            <li><img src="images/banner3.jpg" alt=""></li>
-        </ul>
-        <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="images/arrowl.png" alt="prev" width="20" height="35"></a>
-        <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="images/arrowr.png" alt="next" width="20" height="37"></a>
-    </div>
+    <!--<div class="banner">-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <a href="all-work.html" class="swiper-slide" style="background:url(images/banner0.jpg) no-repeat"></a>
+                <a href="sportAndReading/index.html" class="swiper-slide" style="background:url(images/sportAndreading.jpg) no-repeat"></a>
+                <a href="javascript:void (0);" class="swiper-slide" style="background:url(images/bnner2.jpg) no-repeat"></a>
+                <a href="javascript:void(0);" class="swiper-slide" style="background:url(images/banner3.jpg) no-repeat"></a>
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!--&lt;!&ndash;导航按钮 &ndash;&gt;-->
+            <!--<div class="swiper-button-prev"></div>-->
+            <!--<div class="swiper-button-next"></div>-->
+        </div>
+    <!--</div>-->
 
 
     <!--banner end-->
-    <!--=================-->
 
-    <div class="container w1000"><!--container begin-->
+    <div class="container"><!--container begin-->
         <article class="content_item">
             <header class="item_title">
                 <h2>WORKS</h2>
@@ -471,25 +411,28 @@
     </div>
     <!--container end-->
 
-    <!--=================-->
-
     <footer>
         Copyright © 2015-2015 All rights by Sunshine
     </footer>
     <!--footer end-->
-
-    <!--=================-->
-    <script>
-        $(document).ready(function (e) {
-            var unslider04 = $('#b04').unslider({
-                        dots: true
-                    }),
-                    data04 = unslider04.data('unslider');
-            $('.unslider-arrow04').click(function () {
-                var fn = this.className.split(' ')[1];
-                data04[fn]();
-            });
-        });
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript">
+        var mainSwiper = new Swiper('.swiper-container', {
+            // direction: 'vertical',
+            //循环轮播
+            loop: true,
+            // 分页器
+            pagination: '.swiper-pagination',
+            // 前进后退按钮
+//            nextButton: '.swiper-button-next',
+//            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            autoplay: 2000,
+            effect: 'fade'
+        })
     </script>
 </div>
 </body>

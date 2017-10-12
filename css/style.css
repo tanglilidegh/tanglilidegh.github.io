@@ -28,9 +28,15 @@ body {
     color: #979797;
     background-color: #d2eae9;
 }
+html, body {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
 
+ul, ol {
+    padding: 0;
+}
 .w1000 {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -105,7 +111,19 @@ body {
     height: 360px;
     background: #a1cdc0 url("../images/banner_bg.jpg") no-repeat top center;/**/
 }
+.banner {
+    /*position: relative;*/
+    /*overflow: auto;*/
+    text-align: center;
+}
 
+.banner li {
+    list-style: none;
+}
+
+.banner ul li {
+    float: left;
+}
 /* === banner end === */
 
 /* === container begin === */
@@ -136,6 +154,7 @@ body {
 
 #works {
     background: #49c9b0;
+    text-align: center;
 }
 
 #works p {
@@ -149,10 +168,13 @@ body {
 .button_group {
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
-
-.button_group li a {
+.button_group li{
     display: inline-block;
+}
+.button_group li a {
+    display: block;
     padding: 5px 10px;
     background: #2f9982;
     border-radius: 5px;
@@ -175,7 +197,8 @@ body {
 }
 
 .works_img li {
-    float: left;
+    display: inline-block;
+    font-size: 0;
     margin: 6px;
 }
 
