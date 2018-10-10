@@ -55,12 +55,18 @@ a {
 }
 
 #images a {
-    margin-right: 14px;
+    width: 24%;
+    height: 300px;
+    overflow: hidden;
+    /*margin-right: 14px;*/
     display: inline-block;
 
 }
 
 #images a img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 5px;

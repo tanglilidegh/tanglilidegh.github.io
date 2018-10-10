@@ -311,10 +311,14 @@ a.more:hover {
 /* photo_group begin */
 .photo_group {
     font-size: 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .photo_group ul li {
-    float: left;
+    display: inline-block;
+    /*float: left;*/
 }
 
 .photo_group ul li img {
@@ -404,6 +408,7 @@ a.more:hover {
 
 .Competitiveness > div:nth-child(2) {
     margin: 0 20px;
+    width: 45% !important;
 }
 
 .Competitiveness > div:nth-child(3) {
@@ -411,14 +416,14 @@ a.more:hover {
 }
 
 .Competitiveness_item {
-    width: 23%;
+    width: 16%;
     box-sizing: border-box;
     float: left;
     padding: 10px;
     border: 1px solid #dfdfdf;
     background: #fff;
     text-align: center;
-    height: 360px;
+    height: 430px;
 }
 
 .Competitiveness_item h3 {
@@ -499,8 +504,15 @@ footer {
 .sportAndReading-head{
     /*position: relative;*/
 }
+.sportAndReading-head > div a{
+    margin: 0 auto;
+    display: block;
+    width: 1000px;
+    text-align: center;
+    height: 300px;
+}
 .sportAndReading-nav {
-    margin-top: -56px;
+    margin-top: -70px;
     width: 80%;
     /*position: absolute;*/
     /*bottom: 6px;*/
@@ -673,7 +685,7 @@ footer {
     font-size: 14px;
     line-height: 1.5;
     width: 80%;
-    margin: 0 auto;
+    margin: 27px auto 5px;
     text-align: left;
 
 }
